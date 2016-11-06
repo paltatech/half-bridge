@@ -271,12 +271,16 @@ Wire Wire Line
 Wire Wire Line
 	2750 3650 2750 3550
 Wire Wire Line
-	2700 3550 2800 3550
+	2700 3550 2750 3550
+Wire Wire Line
+	2750 3550 2800 3550
 Connection ~ 2750 3550
 Wire Wire Line
 	2400 3650 2500 3650
 Wire Wire Line
-	2400 3250 2400 3650
+	2400 3250 2400 3550
+Wire Wire Line
+	2400 3550 2400 3650
 Wire Wire Line
 	2400 3550 2500 3550
 Wire Wire Line
@@ -284,12 +288,16 @@ Wire Wire Line
 Wire Wire Line
 	3600 3650 3600 3550
 Wire Wire Line
-	3550 3550 3650 3550
+	3550 3550 3600 3550
+Wire Wire Line
+	3600 3550 3650 3550
 Connection ~ 3600 3550
 Wire Wire Line
 	3250 3650 3350 3650
 Wire Wire Line
-	3250 3250 3250 3650
+	3250 3250 3250 3550
+Wire Wire Line
+	3250 3550 3250 3650
 Wire Wire Line
 	3250 3550 3350 3550
 Wire Wire Line
@@ -301,12 +309,16 @@ Wire Wire Line
 Wire Wire Line
 	2750 4750 2750 4650
 Wire Wire Line
-	2700 4650 2800 4650
+	2700 4650 2750 4650
+Wire Wire Line
+	2750 4650 2800 4650
 Connection ~ 2750 4650
 Wire Wire Line
 	2400 4750 2500 4750
 Wire Wire Line
-	2400 4650 2400 5050
+	2400 4650 2400 4750
+Wire Wire Line
+	2400 4750 2400 5050
 Wire Wire Line
 	2400 4650 2500 4650
 Wire Wire Line
@@ -314,20 +326,38 @@ Wire Wire Line
 Wire Wire Line
 	3600 4750 3600 4650
 Wire Wire Line
-	3550 4650 3650 4650
+	3550 4650 3600 4650
+Wire Wire Line
+	3600 4650 3650 4650
 Connection ~ 3600 4650
 Wire Wire Line
 	3250 4750 3350 4750
 Wire Wire Line
-	3250 5050 3250 4650
+	3250 5050 3250 4750
+Wire Wire Line
+	3250 4750 3250 4650
 Wire Wire Line
 	3250 4650 3350 4650
 Wire Wire Line
-	2950 3600 2950 4500
+	2950 3600 2950 4100
 Wire Wire Line
-	2950 4100 8050 4100
+	2950 4100 2950 4500
 Wire Wire Line
-	3800 3600 3800 4500
+	2950 4100 3800 4100
+Wire Wire Line
+	3800 4100 4650 4100
+Wire Wire Line
+	4650 4100 5500 4100
+Wire Wire Line
+	5500 4100 6350 4100
+Wire Wire Line
+	6350 4100 7200 4100
+Wire Wire Line
+	7200 4100 8050 4100
+Wire Wire Line
+	3800 3600 3800 4100
+Wire Wire Line
+	3800 4100 3800 4500
 Connection ~ 2950 4100
 Connection ~ 3800 4100
 Wire Wire Line
@@ -337,15 +367,55 @@ Wire Wire Line
 Connection ~ 2400 3550
 Connection ~ 3250 3550
 Wire Wire Line
-	6650 5050 2250 5050
+	6650 5050 5800 5050
+Wire Wire Line
+	5800 5050 4950 5050
+Wire Wire Line
+	4950 5050 4100 5050
+Wire Wire Line
+	4100 5050 3250 5050
+Wire Wire Line
+	3250 5050 2400 5050
+Wire Wire Line
+	2400 5050 2250 5050
 Connection ~ 2400 4750
 Connection ~ 3250 4750
 Wire Wire Line
-	2250 3250 6650 3250
+	2250 3250 2400 3250
 Wire Wire Line
-	2850 5250 7200 5250
+	2400 3250 3250 3250
 Wire Wire Line
-	2850 3050 7200 3050
+	3250 3250 4100 3250
+Wire Wire Line
+	4100 3250 4950 3250
+Wire Wire Line
+	4950 3250 5800 3250
+Wire Wire Line
+	5800 3250 6650 3250
+Wire Wire Line
+	2850 5250 2950 5250
+Wire Wire Line
+	2950 5250 3800 5250
+Wire Wire Line
+	3800 5250 4650 5250
+Wire Wire Line
+	4650 5250 5500 5250
+Wire Wire Line
+	5500 5250 6350 5250
+Wire Wire Line
+	6350 5250 7200 5250
+Wire Wire Line
+	2850 3050 2950 3050
+Wire Wire Line
+	2950 3050 3800 3050
+Wire Wire Line
+	3800 3050 4650 3050
+Wire Wire Line
+	4650 3050 5500 3050
+Wire Wire Line
+	5500 3050 6350 3050
+Wire Wire Line
+	6350 3050 7200 3050
 $Comp
 L IGBT Q5
 U 1 1 581377B6
@@ -503,12 +573,16 @@ Wire Wire Line
 Wire Wire Line
 	4450 3650 4450 3550
 Wire Wire Line
-	4400 3550 4500 3550
+	4400 3550 4450 3550
+Wire Wire Line
+	4450 3550 4500 3550
 Connection ~ 4450 3550
 Wire Wire Line
 	4100 3650 4200 3650
 Wire Wire Line
-	4100 3250 4100 3650
+	4100 3250 4100 3550
+Wire Wire Line
+	4100 3550 4100 3650
 Wire Wire Line
 	4100 3550 4200 3550
 Wire Wire Line
@@ -516,12 +590,16 @@ Wire Wire Line
 Wire Wire Line
 	5300 3650 5300 3550
 Wire Wire Line
-	5250 3550 5350 3550
+	5250 3550 5300 3550
+Wire Wire Line
+	5300 3550 5350 3550
 Connection ~ 5300 3550
 Wire Wire Line
 	4950 3650 5050 3650
 Wire Wire Line
-	4950 3250 4950 3650
+	4950 3250 4950 3550
+Wire Wire Line
+	4950 3550 4950 3650
 Wire Wire Line
 	4950 3550 5050 3550
 Wire Wire Line
@@ -533,12 +611,16 @@ Wire Wire Line
 Wire Wire Line
 	4450 4750 4450 4650
 Wire Wire Line
-	4400 4650 4500 4650
+	4400 4650 4450 4650
+Wire Wire Line
+	4450 4650 4500 4650
 Connection ~ 4450 4650
 Wire Wire Line
 	4100 4750 4200 4750
 Wire Wire Line
-	4100 4650 4100 5050
+	4100 4650 4100 4750
+Wire Wire Line
+	4100 4750 4100 5050
 Wire Wire Line
 	4100 4650 4200 4650
 Wire Wire Line
@@ -546,18 +628,26 @@ Wire Wire Line
 Wire Wire Line
 	5300 4750 5300 4650
 Wire Wire Line
-	5250 4650 5350 4650
+	5250 4650 5300 4650
+Wire Wire Line
+	5300 4650 5350 4650
 Connection ~ 5300 4650
 Wire Wire Line
 	4950 4750 5050 4750
 Wire Wire Line
-	4950 4650 4950 5050
+	4950 4650 4950 4750
+Wire Wire Line
+	4950 4750 4950 5050
 Wire Wire Line
 	4950 4650 5050 4650
 Wire Wire Line
-	4650 3600 4650 4500
+	4650 3600 4650 4100
 Wire Wire Line
-	5500 3600 5500 4500
+	4650 4100 4650 4500
+Wire Wire Line
+	5500 3600 5500 4100
+Wire Wire Line
+	5500 4100 5500 4500
 Connection ~ 4650 4100
 Connection ~ 5500 4100
 Wire Wire Line
@@ -733,12 +823,16 @@ Wire Wire Line
 Wire Wire Line
 	6150 3650 6150 3550
 Wire Wire Line
-	6100 3550 6200 3550
+	6100 3550 6150 3550
+Wire Wire Line
+	6150 3550 6200 3550
 Connection ~ 6150 3550
 Wire Wire Line
 	5800 3650 5900 3650
 Wire Wire Line
-	5800 3250 5800 3650
+	5800 3250 5800 3550
+Wire Wire Line
+	5800 3550 5800 3650
 Wire Wire Line
 	5800 3550 5900 3550
 Wire Wire Line
@@ -746,12 +840,16 @@ Wire Wire Line
 Wire Wire Line
 	7000 3650 7000 3550
 Wire Wire Line
-	6950 3550 7050 3550
+	6950 3550 7000 3550
+Wire Wire Line
+	7000 3550 7050 3550
 Connection ~ 7000 3550
 Wire Wire Line
 	6650 3650 6750 3650
 Wire Wire Line
-	6650 3250 6650 3650
+	6650 3250 6650 3550
+Wire Wire Line
+	6650 3550 6650 3650
 Wire Wire Line
 	6650 3550 6750 3550
 Wire Wire Line
@@ -763,12 +861,16 @@ Wire Wire Line
 Wire Wire Line
 	6150 4750 6150 4650
 Wire Wire Line
-	6100 4650 6200 4650
+	6100 4650 6150 4650
+Wire Wire Line
+	6150 4650 6200 4650
 Connection ~ 6150 4650
 Wire Wire Line
 	5800 4750 5900 4750
 Wire Wire Line
-	5800 4650 5800 5050
+	5800 4650 5800 4750
+Wire Wire Line
+	5800 4750 5800 5050
 Wire Wire Line
 	5800 4650 5900 4650
 Wire Wire Line
@@ -776,18 +878,26 @@ Wire Wire Line
 Wire Wire Line
 	7000 4750 7000 4650
 Wire Wire Line
-	6950 4650 7050 4650
+	6950 4650 7000 4650
+Wire Wire Line
+	7000 4650 7050 4650
 Connection ~ 7000 4650
 Wire Wire Line
 	6650 4750 6750 4750
 Wire Wire Line
-	6650 4650 6650 5050
+	6650 4650 6650 4750
+Wire Wire Line
+	6650 4750 6650 5050
 Wire Wire Line
 	6650 4650 6750 4650
 Wire Wire Line
-	6350 3600 6350 4500
+	6350 3600 6350 4100
 Wire Wire Line
-	7200 3600 7200 4500
+	6350 4100 6350 4500
+Wire Wire Line
+	7200 3600 7200 4100
+Wire Wire Line
+	7200 4100 7200 4500
 Connection ~ 6350 4100
 Connection ~ 7200 4100
 Wire Wire Line
@@ -890,22 +1000,22 @@ F 4 "B32796G3166K" H 7500 2050 60  0001 C CNN "mfg#"
 	1    7500 2050
 	1    0    0    -1  
 $EndComp
-$Comp
-L C-FILM-6mm C8
-U 1 1 5813A296
-P 8150 2050
-F 0 "C8" H 8263 2096 50  0000 L CNN
-F 1 "16uF 700v" H 8263 2005 50  0000 L CNN
-F 2 "paltatech:CAP_FILM_EPCOS_42x20mm" H 8150 2050 50  0001 C CNN
-F 3 "" H 8140 2025 60  0000 C CNN
-F 4 "B32796G3166K" H 8150 2050 60  0001 C CNN "mfg#"
-	1    8150 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 1950 3600 1850
 Wire Wire Line
-	3500 1850 8150 1850
+	3500 1850 3600 1850
+Wire Wire Line
+	3600 1850 4250 1850
+Wire Wire Line
+	4250 1850 4900 1850
+Wire Wire Line
+	4900 1850 5550 1850
+Wire Wire Line
+	5550 1850 6200 1850
+Wire Wire Line
+	6200 1850 6850 1850
+Wire Wire Line
+	6850 1850 7500 1850
 Wire Wire Line
 	4250 1850 4250 1950
 Wire Wire Line
@@ -924,17 +1034,23 @@ Wire Wire Line
 	7500 1850 7500 1950
 Connection ~ 6850 1850
 Wire Wire Line
-	8150 1850 8150 1950
-Connection ~ 7500 1850
+	3500 2250 3600 2250
 Wire Wire Line
-	8150 2250 8150 2150
+	3600 2250 4250 2250
 Wire Wire Line
-	3500 2250 8150 2250
+	4250 2250 4900 2250
+Wire Wire Line
+	4900 2250 5550 2250
+Wire Wire Line
+	5550 2250 6200 2250
+Wire Wire Line
+	6200 2250 6850 2250
+Wire Wire Line
+	6850 2250 7500 2250
 Wire Wire Line
 	7500 2250 7500 2150
 Wire Wire Line
 	6850 2250 6850 2150
-Connection ~ 7500 2250
 Wire Wire Line
 	6200 2250 6200 2150
 Connection ~ 6850 2250
@@ -985,4 +1101,8 @@ Text Notes 1300 7850 0    60   ~ 0
 Specs are 200kw peak, 70kw continuous\n\nSo, at 400v you need 175 Amp per phase. That is 30A per IGBT\n\nAt 30A, 0.9v Vce = 27W per transistor\n\nAt 45°C ambient temperature, if we want 75°C Junction temp, its a 30°C dT, and we need a total Rthja < 1.1°C/W\n\n0.15°C/W RthCS = thermal resistance, case to heat sink (from the device data sheet). \n\n\n\n\n\n\n
 Text Notes 4450 5750 0    60   ~ 0
 Sil-pad thermal: SPK4-0.006-00-11.512
+Text Notes 8800 2250 0    40   ~ 0
+Capacitors must be ably tu supply roughly 65% of battery\nsupplied current, so its important to have enough rms\ncurrent in the cap bank.\nIn this case, if we plan for 200kW at 500A, we should expect\na total RMS current of 325A in the capacitors.\nWe have 16uF*7*3 = 336uF
+Text Notes 9000 3300 0    60   ~ 0
+oxido y cobre
 $EndSCHEMATC
