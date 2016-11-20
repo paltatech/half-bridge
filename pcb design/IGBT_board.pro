@@ -1,4 +1,4 @@
-update=Wed 09 Nov 2016 04:32:33 AM ART
+update=Sun 20 Nov 2016 04:08:39 AM ART
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,17 +6,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=schlib/page_layouts/basic.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=pcblib/page_layouts/empty.kicad_wks
@@ -139,3 +128,13 @@ LibName96=schlib/library/Vishay
 LibName97=schlib/library/Winbond
 LibName98=schlib/library/Xilinx
 LibName99=/home/marcos/electronica/paltatech/tools/paltatech
+[schematic_editor]
+version=1
+PageLayoutDescrFile=schlib/page_layouts/basic.kicad_wks
+PlotDirectoryName=../doc/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1

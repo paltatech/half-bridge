@@ -99,7 +99,7 @@ LIBS:Winbond
 LIBS:Xilinx
 LIBS:paltatech
 LIBS:IGBT_board-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -107,7 +107,7 @@ Sheet 3 4
 Title ""
 Date "2016-11-09"
 Rev "A"
-Comp "PALTA TECH"
+Comp "PALTA TECH S.A."
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -422,10 +422,6 @@ F 3 "" H 4450 5150 60  0000 C CNN
 	1    4450 5150
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 2750 0    50   Input ~ 0
-24v
-Text GLabel 5550 2800 0    50   Input ~ 0
-24v
 Text Label 3900 4750 2    60   ~ 0
 CS
 Text Label 2250 3950 2    60   ~ 0
@@ -454,8 +450,6 @@ F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 2000 5000 60  0001 C CNN "BOM"
 	1    1200 4450
 	1    0    0    1   
 $EndComp
-Text GLabel 850  4050 0    50   Input ~ 0
-24v
 $Comp
 L GND #PWR010
 U 1 1 582389B6
@@ -1026,4 +1020,12 @@ F 3 "" H 5650 3150 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	5650 3150 5650 3100
+Text Notes 950  1500 0    260  ~ 52
+Dual Isolated +15v -8v power supply\n2W per IGBT bank 
+Text HLabel 5550 2800 0    50   Input ~ 0
+24v
+Text HLabel 2700 2750 0    50   Input ~ 0
+24v
+Text HLabel 850  4050 0    50   Input ~ 0
+24v
 $EndSCHEMATC
