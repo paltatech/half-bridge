@@ -330,60 +330,12 @@ F 4 "08055C104JAT2A" H 6450 4050 60  0001 C CNN "mfg#"
 	1    6450 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4450 3900 7050 3900
-Wire Wire Line
-	5300 3850 5300 3950
-Connection ~ 5300 3900
-Wire Wire Line
-	5850 3850 5850 3950
-Connection ~ 5850 3900
-Wire Wire Line
-	6450 3850 6450 3950
-Connection ~ 6450 3900
-Wire Wire Line
-	6450 3600 6450 3650
-Wire Wire Line
-	4750 3600 7050 3600
-Wire Wire Line
-	5850 3600 5850 3650
-Wire Wire Line
-	5300 3600 5300 3650
-Connection ~ 5850 3600
-Wire Wire Line
-	4750 3600 4750 3700
-Wire Wire Line
-	4750 3700 4450 3700
-Connection ~ 5300 3600
-Wire Wire Line
-	4450 4200 7050 4200
-Wire Wire Line
-	4750 4200 4750 4150
-Wire Wire Line
-	4450 4100 4550 4100
-Wire Wire Line
-	4550 4100 4550 4200
-Connection ~ 4550 4200
-Wire Wire Line
-	4750 3950 4750 3900
-Connection ~ 4750 3900
-Wire Wire Line
-	5300 4200 5300 4150
-Connection ~ 4750 4200
-Wire Wire Line
-	5850 4200 5850 4150
-Connection ~ 5300 4200
-Wire Wire Line
-	6450 4200 6450 4150
-Connection ~ 5850 4200
 Text HLabel 7050 3900 2    60   Input ~ 0
 GND_ISO
 Text HLabel 7050 3600 2    60   Input ~ 0
 +15V
-Connection ~ 6450 3600
 Text HLabel 7050 4200 2    60   Input ~ 0
 -8V
-Connection ~ 6450 4200
 $Comp
 L R-0603 R28
 U 1 1 5824153A
@@ -398,48 +350,32 @@ F 4 "RES SMD 1k 5% [0603]" H 3400 4850 60  0001 C CNN "BOM"
 	1    2650 4300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3050 4300 2750 4300
 $Comp
-L GND #PWR02
+L GND #PWR4
 U 1 1 582416B6
 P 2400 4400
-AR Path="/5822D62D/582416B6" Ref="#PWR02"  Part="1" 
-AR Path="/5824556D/582416B6" Ref="#PWR017"  Part="1" 
-F 0 "#PWR02" H 2400 4400 30  0001 C CNN
+AR Path="/5822D62D/582416B6" Ref="#PWR4"  Part="1" 
+AR Path="/5824556D/582416B6" Ref="#PWR20"  Part="1" 
+F 0 "#PWR4" H 2400 4400 30  0001 C CNN
 F 1 "GND" H 2400 4330 30  0001 C CNN
 F 2 "" H 2400 4400 60  0000 C CNN
 F 3 "" H 2400 4400 60  0000 C CNN
 	1    2400 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 4400 2400 4300
-Wire Wire Line
-	2400 4300 2550 4300
-Wire Wire Line
-	3050 3900 2950 3900
-Wire Wire Line
-	2650 4000 3050 4000
-Wire Wire Line
-	2950 3900 2950 4000
 $Comp
-L GND #PWR03
+L GND #PWR5
 U 1 1 58241AEC
 P 2650 4050
-AR Path="/5822D62D/58241AEC" Ref="#PWR03"  Part="1" 
-AR Path="/5824556D/58241AEC" Ref="#PWR018"  Part="1" 
-F 0 "#PWR03" H 2650 4050 30  0001 C CNN
+AR Path="/5822D62D/58241AEC" Ref="#PWR5"  Part="1" 
+AR Path="/5824556D/58241AEC" Ref="#PWR21"  Part="1" 
+F 0 "#PWR5" H 2650 4050 30  0001 C CNN
 F 1 "GND" H 2650 3980 30  0001 C CNN
 F 2 "" H 2650 4050 60  0000 C CNN
 F 3 "" H 2650 4050 60  0000 C CNN
 	1    2650 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 3950 2650 4050
-Connection ~ 2950 4000
-Connection ~ 2650 4000
 $Comp
 L C-0603 C8
 U 1 1 582417BD
@@ -454,13 +390,8 @@ F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 3450 4400 60  0001 C CNN "BOM"
 	1    2650 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 3750 2650 3700
-Wire Wire Line
-	2400 3700 3050 3700
 Text GLabel 1300 3700 0    50   Input ~ 0
 3.3v
-Connection ~ 2650 3700
 $Comp
 L R-0603 R27
 U 1 1 58241F2C
@@ -475,8 +406,6 @@ F 4 "RES SMD 1k 5% [0603]" H 3050 4250 60  0001 C CNN "BOM"
 	1    2300 3700
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1300 3700 2200 3700
 NoConn ~ 4450 4600
 $Comp
 L R-0805 R29
@@ -506,10 +435,6 @@ F 4 "RES SMD 1k 5% [0805]" H 5750 5450 60  0001 C CNN "BOM"
 	1    5000 4900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4450 4900 4900 4900
-Wire Wire Line
-	4450 4750 4900 4750
 $Comp
 L R-0805 R31
 U 1 1 5824286A
@@ -538,40 +463,6 @@ F 4 "RES SMD 1k 5% [2512]" H 7000 5650 60  0001 C CNN "BOM"
 	1    6250 5100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5750 4950 6150 4950
-Wire Wire Line
-	5750 4850 5750 5250
-Wire Wire Line
-	5750 5100 6150 5100
-Connection ~ 5750 4950
-Connection ~ 5750 5100
-Wire Wire Line
-	5100 4750 5600 4750
-Wire Wire Line
-	5600 5350 5400 5350
-Wire Wire Line
-	5400 5350 5400 4900
-Wire Wire Line
-	5400 4900 5100 4900
-Wire Wire Line
-	6350 4950 6450 4950
-Wire Wire Line
-	6350 5100 6450 5100
-Wire Wire Line
-	6650 5100 7600 5100
-Wire Wire Line
-	7200 4850 7200 5100
-Wire Wire Line
-	7200 4950 7050 4950
-Wire Wire Line
-	5750 5450 5750 5600
-Wire Wire Line
-	5750 5600 5650 5600
-Wire Wire Line
-	5750 4650 5750 4500
-Wire Wire Line
-	5650 4500 7200 4500
 Text HLabel 5650 5600 0    60   Input ~ 0
 -8V
 Text HLabel 5650 4500 0    60   Input ~ 0
@@ -590,16 +481,8 @@ F 4 "RES SMD 1k 5% [0603]" H 1850 4700 60  0001 C CNN "BOM"
 	1    1100 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	900  4700 3050 4700
-Wire Wire Line
-	1100 4700 1100 4250
 Text GLabel 1050 4000 0    50   Input ~ 0
 3.3v
-Wire Wire Line
-	1050 4000 1250 4000
-Wire Wire Line
-	1100 4000 1100 4050
 $Comp
 L R-0603 R26
 U 1 1 582375EC
@@ -614,15 +497,6 @@ F 4 "RES SMD 1k 5% [0603]" H 2000 4700 60  0001 C CNN "BOM"
 	1    1250 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 4250 1250 4500
-Wire Wire Line
-	900  4500 3050 4500
-Wire Wire Line
-	1250 4000 1250 4050
-Connection ~ 1100 4000
-Wire Wire Line
-	4450 4400 8700 4400
 Text HLabel 7600 5100 2    60   Output ~ 0
 GATE
 $Comp
@@ -653,60 +527,22 @@ F 4 "RES SMD 1k 5% [0805]" H 9550 4950 60  0001 C CNN "BOM"
 	1    8800 4400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8500 4400 8500 4500
-Wire Wire Line
-	7850 4400 7850 4500
-Connection ~ 8500 4400
-Connection ~ 7850 4400
-Wire Wire Line
-	7550 4400 7550 4500
-Connection ~ 7550 4400
-Wire Wire Line
-	9150 4400 8900 4400
-Wire Wire Line
-	9750 4400 9350 4400
-Wire Wire Line
-	7550 4700 7550 4800
-Wire Wire Line
-	7550 4800 8650 4800
-Wire Wire Line
-	7850 4800 7850 4700
-Wire Wire Line
-	8500 4800 8500 4700
-Connection ~ 7850 4800
-Connection ~ 8500 4800
 Text HLabel 10150 4400 2    60   Output ~ 0
 COLLECTOR
-Wire Wire Line
-	10150 4400 9950 4400
 Text HLabel 10150 3650 2    60   Output ~ 0
 EMITTER
-Wire Wire Line
-	9950 3650 10150 3650
 Text HLabel 900  4500 0    60   Output ~ 0
 RDY
-Connection ~ 1250 4500
 Text HLabel 900  4700 0    60   Output ~ 0
 FAULT
-Connection ~ 1100 4700
 Text HLabel 900  4900 0    60   Input ~ 0
 RESET
-Wire Wire Line
-	900  4900 3050 4900
 Text HLabel 8650 4800 2    60   Input ~ 0
 GND_ISO
 Text HLabel 9950 3650 0    60   Input ~ 0
 GND_ISO
-Wire Wire Line
-	7300 5200 7300 5100
-Connection ~ 7300 5100
 Text HLabel 7600 5500 2    60   Input ~ 0
 GND_ISO
-Wire Wire Line
-	7300 5500 7600 5500
-Wire Wire Line
-	7300 5500 7300 5400
 $Comp
 L R-0805 R60
 U 1 1 58308678
@@ -721,22 +557,8 @@ F 4 "RES SMD 1k 5% [0805]" H 8250 5850 60  0001 C CNN "BOM"
 	1    7500 5300
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7500 5500 7500 5400
-Connection ~ 7500 5500
-Wire Wire Line
-	7500 5200 7500 5100
-Connection ~ 7500 5100
 Text Notes 600  1200 0    260  ~ 52
 ISO5852S isolated IGBT driver with current buffering
-Wire Notes Line
-	3650 2750 3650 5900
-Wire Notes Line
-	3850 5900 3850 2750
-Wire Notes Line
-	3850 5900 11200 5900
-Wire Notes Line
-	3850 2750 11200 2750
 Text Notes 3300 6050 0    50   ~ 10
 5.7kV RMS Isolation barrier
 $Bitmap
@@ -10715,24 +10537,19 @@ F 4 "CAP MLCC 10uF X7R 50V 5% [0805]" H 2250 4400 60  0001 C CNN "BOM"
 	1    1450 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 3750 1450 3700
-Connection ~ 1450 3700
 $Comp
-L GND #PWR04
+L GND #PWR2
 U 1 1 5830FC3F
 P 1450 4000
-AR Path="/5822D62D/5830FC3F" Ref="#PWR04"  Part="1" 
-AR Path="/5824556D/5830FC3F" Ref="#PWR019"  Part="1" 
-F 0 "#PWR04" H 1450 4000 30  0001 C CNN
+AR Path="/5822D62D/5830FC3F" Ref="#PWR2"  Part="1" 
+AR Path="/5824556D/5830FC3F" Ref="#PWR18"  Part="1" 
+F 0 "#PWR2" H 1450 4000 30  0001 C CNN
 F 1 "GND" H 1450 3930 30  0001 C CNN
 F 2 "" H 1450 4000 60  0000 C CNN
 F 3 "" H 1450 4000 60  0000 C CNN
 	1    1450 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 4000 1450 3950
 $Comp
 L BAT54S D15
 U 1 1 583100FD
@@ -10749,33 +10566,21 @@ F 4 "SCHOTTKY BAT54S" H 2100 3850 60  0001 C CNN "BOM"
 $EndComp
 Text GLabel 2050 3800 0    50   Input ~ 0
 3.3v
-Wire Wire Line
-	2050 3800 2100 3800
-Wire Wire Line
-	2100 3800 2100 3850
 $Comp
-L GND #PWR05
+L GND #PWR3
 U 1 1 58310421
 P 2100 4400
-AR Path="/5822D62D/58310421" Ref="#PWR05"  Part="1" 
-AR Path="/5824556D/58310421" Ref="#PWR020"  Part="1" 
-F 0 "#PWR05" H 2100 4400 30  0001 C CNN
+AR Path="/5822D62D/58310421" Ref="#PWR3"  Part="1" 
+AR Path="/5824556D/58310421" Ref="#PWR19"  Part="1" 
+F 0 "#PWR3" H 2100 4400 30  0001 C CNN
 F 1 "GND" H 2100 4330 30  0001 C CNN
 F 2 "" H 2100 4400 60  0000 C CNN
 F 3 "" H 2100 4400 60  0000 C CNN
 	1    2100 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 4400 2100 4350
 Text HLabel 1900 4100 0    60   Input ~ 0
 IN+
-Wire Wire Line
-	1900 4100 2500 4100
-Wire Wire Line
-	3050 4200 2500 4200
-Wire Wire Line
-	2500 4200 2500 4100
 Text Notes 1650 4250 0    30   ~ 0
 Input protection
 $Comp
@@ -10807,8 +10612,6 @@ F 4 "RES SMD 1k 5% [2512]" H 7300 5500 60  0001 C CNN "BOM"
 	1    6550 4950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6650 4950 6850 4950
 $Comp
 L R-0805 R58
 U 1 1 5832D475
@@ -10823,13 +10626,8 @@ F 4 "RES SMD 1k 5% [2512]" H 7300 5650 60  0001 C CNN "BOM"
 	1    6550 5100
 	0    1    1    0   
 $EndComp
-Connection ~ 7200 5100
-Text Notes 4150 5400 0    40   ~ 0
-According to TI, clamp\nnot needed for bipolar supply...\n9.3.1 in the datasheet
-Wire Notes Line
-	4500 4600 4600 4600
-Wire Notes Line
-	4600 4600 4600 5150
+Text Notes 4150 5300 0    40   ~ 0
+clamp not needed for bipolar supply.\n9.3.1 in the datasheet
 $Comp
 L SCHOTTKY D16
 U 1 1 5833272F
@@ -10844,11 +10642,273 @@ F 4 "SK310A-LTP" H 7200 4750 60  0001 C CNN "mfg#"
 	1    7200 4750
 	-1   0    0    1   
 $EndComp
+Text Notes 6050 5350 0    30   ~ 0
+Gate resistor power rating:\nCheck www.goo.gl/HwrKMw\nIts around 2.5W ON (and we have 4W)\nand 0.6W OFF (and we have 2W)
+Wire Wire Line
+	4450 3900 7050 3900
+Wire Wire Line
+	5300 3850 5300 3950
+Connection ~ 5300 3900
+Wire Wire Line
+	5850 3850 5850 3950
+Connection ~ 5850 3900
+Wire Wire Line
+	6450 3850 6450 3950
+Connection ~ 6450 3900
+Wire Wire Line
+	6450 3600 6450 3650
+Wire Wire Line
+	4750 3600 7050 3600
+Wire Wire Line
+	5850 3600 5850 3650
+Wire Wire Line
+	5300 3600 5300 3650
+Connection ~ 5850 3600
+Wire Wire Line
+	4750 3600 4750 3700
+Wire Wire Line
+	4750 3700 4450 3700
+Connection ~ 5300 3600
+Wire Wire Line
+	4450 4200 7050 4200
+Wire Wire Line
+	4750 4200 4750 4150
+Wire Wire Line
+	4450 4100 4550 4100
+Wire Wire Line
+	4550 4100 4550 4200
+Connection ~ 4550 4200
+Wire Wire Line
+	4750 3950 4750 3900
+Connection ~ 4750 3900
+Wire Wire Line
+	5300 4200 5300 4150
+Connection ~ 4750 4200
+Wire Wire Line
+	5850 4200 5850 4150
+Connection ~ 5300 4200
+Wire Wire Line
+	6450 4200 6450 4150
+Connection ~ 5850 4200
+Connection ~ 6450 3600
+Connection ~ 6450 4200
+Wire Wire Line
+	3050 4300 2750 4300
+Wire Wire Line
+	2400 4400 2400 4300
+Wire Wire Line
+	2400 4300 2550 4300
+Wire Wire Line
+	3050 3900 2950 3900
+Wire Wire Line
+	2650 4000 3050 4000
+Wire Wire Line
+	2950 3900 2950 4000
+Wire Wire Line
+	2650 3950 2650 4050
+Connection ~ 2950 4000
+Connection ~ 2650 4000
+Wire Wire Line
+	2650 3750 2650 3700
+Wire Wire Line
+	2400 3700 3050 3700
+Connection ~ 2650 3700
+Wire Wire Line
+	1300 3700 2200 3700
+Wire Wire Line
+	4450 4900 4900 4900
+Wire Wire Line
+	4450 4750 4900 4750
+Wire Wire Line
+	5750 4950 6150 4950
+Wire Wire Line
+	5750 4850 5750 5250
+Wire Wire Line
+	5750 5100 6150 5100
+Connection ~ 5750 4950
+Connection ~ 5750 5100
+Wire Wire Line
+	5100 4750 5600 4750
+Wire Wire Line
+	5600 5350 5400 5350
+Wire Wire Line
+	5400 5350 5400 4900
+Wire Wire Line
+	5400 4900 5100 4900
+Wire Wire Line
+	6350 4950 6450 4950
+Wire Wire Line
+	6350 5100 6450 5100
+Wire Wire Line
+	6650 5100 7600 5100
+Wire Wire Line
+	7200 4850 7200 5100
+Wire Wire Line
+	7200 4950 7050 4950
+Wire Wire Line
+	5750 5450 5750 5600
+Wire Wire Line
+	5750 5600 5650 5600
+Wire Wire Line
+	5750 4650 5750 4500
+Wire Wire Line
+	5650 4500 7200 4500
+Wire Wire Line
+	900  4700 3050 4700
+Wire Wire Line
+	1100 4700 1100 4250
+Wire Wire Line
+	1050 4000 1250 4000
+Wire Wire Line
+	1100 4000 1100 4050
+Wire Wire Line
+	1250 4250 1250 4500
+Wire Wire Line
+	900  4500 3050 4500
+Wire Wire Line
+	1250 4000 1250 4050
+Connection ~ 1100 4000
+Wire Wire Line
+	4450 4400 8700 4400
+Wire Wire Line
+	8500 4400 8500 4500
+Wire Wire Line
+	7850 4300 7850 4500
+Connection ~ 8500 4400
+Connection ~ 7850 4400
+Wire Wire Line
+	7550 4400 7550 4500
+Connection ~ 7550 4400
+Wire Wire Line
+	9150 4400 8900 4400
+Wire Wire Line
+	9750 4400 9350 4400
+Wire Wire Line
+	7550 4700 7550 4800
+Wire Wire Line
+	7550 4800 8650 4800
+Wire Wire Line
+	7850 4800 7850 4700
+Wire Wire Line
+	8500 4800 8500 4700
+Connection ~ 7850 4800
+Connection ~ 8500 4800
+Wire Wire Line
+	10150 4400 9950 4400
+Wire Wire Line
+	9950 3650 10150 3650
+Connection ~ 1250 4500
+Connection ~ 1100 4700
+Wire Wire Line
+	900  4900 3050 4900
+Wire Wire Line
+	7300 5200 7300 5100
+Connection ~ 7300 5100
+Wire Wire Line
+	7300 5500 7600 5500
+Wire Wire Line
+	7300 5500 7300 5400
+Wire Wire Line
+	7500 5500 7500 5400
+Connection ~ 7500 5500
+Wire Wire Line
+	7500 5200 7500 5100
+Connection ~ 7500 5100
+Wire Notes Line
+	3650 2750 3650 5900
+Wire Notes Line
+	3850 5900 3850 2750
+Wire Notes Line
+	3850 5900 11200 5900
+Wire Notes Line
+	3850 2750 11200 2750
+Wire Wire Line
+	1450 3750 1450 3700
+Connection ~ 1450 3700
+Wire Wire Line
+	1450 4000 1450 3950
+Wire Wire Line
+	2050 3800 2100 3800
+Wire Wire Line
+	2100 3800 2100 3850
+Wire Wire Line
+	2100 4400 2100 4350
+Wire Wire Line
+	1900 4100 2500 4100
+Wire Wire Line
+	2500 4200 3050 4200
+Wire Wire Line
+	2500 4050 2500 4200
+Wire Wire Line
+	6650 4950 6850 4950
+Connection ~ 7200 5100
+Wire Notes Line
+	4500 4600 4600 4600
+Wire Notes Line
+	4600 4600 4600 5150
 Connection ~ 7200 4950
 Wire Wire Line
 	7200 4500 7200 4650
 Connection ~ 5750 4500
 Connection ~ 2000 4100
-Text Notes 6050 5350 0    30   ~ 0
-Gate resistor power rating:\nCheck www.goo.gl/HwrKMw\nIts around 2.5W ON (and we have 4W)\nand 0.6W OFF (and we have 2W)
+$Comp
+L TESTPOINT TP?
+U 1 1 58364308
+P 2500 4050
+AR Path="/58232371/58364308" Ref="TP?"  Part="1" 
+AR Path="/5822D62D/58364308" Ref="TP3"  Part="1" 
+AR Path="/5824556D/58364308" Ref="TP13"  Part="1" 
+F 0 "TP3" H 2560 4171 50  0000 L CNN
+F 1 "IN" H 2560 4080 50  0000 L CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 2500 4050 50  0001 C CNN
+F 3 "" H 2500 4050 50  0000 C CNN
+	1    2500 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TESTPOINT TP?
+U 1 1 5836430F
+P 7850 4300
+AR Path="/58232371/5836430F" Ref="TP?"  Part="1" 
+AR Path="/5822D62D/5836430F" Ref="TP5"  Part="1" 
+AR Path="/5824556D/5836430F" Ref="TP15"  Part="1" 
+F 0 "TP5" H 7910 4421 50  0000 L CNN
+F 1 "DESAT" H 7910 4330 50  0000 L CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 7850 4300 50  0001 C CNN
+F 3 "" H 7850 4300 50  0000 C CNN
+	1    7850 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 4100
+Text Notes 3050 4200 2    20   ~ 0
+is the internal\npulldown enough?
+$Comp
+L TESTPOINT TP?
+U 1 1 58362FCA
+P 2950 5200
+AR Path="/58232371/58362FCA" Ref="TP?"  Part="1" 
+AR Path="/5822D62D/58362FCA" Ref="TP4"  Part="1" 
+AR Path="/5824556D/58362FCA" Ref="TP14"  Part="1" 
+F 0 "TP4" H 3010 5321 50  0000 L CNN
+F 1 "GND" H 3010 5230 50  0000 L CNN
+F 2 "conn-test:TEST-SMD-SMALL" H 2950 5200 50  0001 C CNN
+F 3 "" H 2950 5200 50  0000 C CNN
+	1    2950 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 58363068
+P 2950 5250
+AR Path="/5822D62D/58363068" Ref="#PWR6"  Part="1" 
+AR Path="/5824556D/58363068" Ref="#PWR22"  Part="1" 
+F 0 "#PWR6" H 2950 5250 30  0001 C CNN
+F 1 "GND" H 2950 5180 30  0001 C CNN
+F 2 "" H 2950 5250 60  0000 C CNN
+F 3 "" H 2950 5250 60  0000 C CNN
+	1    2950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5250 2950 5200
 $EndSCHEMATC
