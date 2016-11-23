@@ -7,6 +7,9 @@ This is the hardware repository of a 3 phase inverter, UNTESTED but designed wit
 * Embedded security features (desaturation, soft turn off, reinforced isolation)
 
 ![Alt text](doc/images/assembly1.png)
+![Alt text](doc/images/pcb_preview.png)
+
+You can also check the layout [here](https://eyrie.io/board?id=7261e811b9074e0fb00fe3fcbbaa14d9) 
 
 Will need some cnc milling, components, a pcb, and some spot welding
 
