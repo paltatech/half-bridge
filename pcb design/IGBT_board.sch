@@ -105,7 +105,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "IGBT module"
-Date "2016-11-09"
+Date "2016-11-24"
 Rev "A"
 Comp "PALTA TECH S.A."
 Comment1 ""
@@ -121,7 +121,7 @@ F 0 "Q1" H 5627 3596 50  0000 L CNN
 F 1 "IGBT" H 5627 3505 50  0000 L CNN
 F 2 "pth-semi:TO-247" H 5627 3459 60  0001 L CNN
 F 3 "" H 5500 3600 60  0000 C CNN
-F 4 "IXXX110N65B4H1" H 5500 3550 60  0001 C CNN "mfg#"
+F 4 "AUIRGPS4067D1" H 5500 3550 60  0001 C CNN "mfg#"
 	1    5500 3550
 	1    0    0    -1  
 $EndComp
@@ -138,7 +138,7 @@ F 4 "IXXX110N65B4H1" H 6350 3550 60  0001 C CNN "mfg#"
 	1    0    0    -1  
 $EndComp
 Text Notes 600  6400 0    60   ~ 0
-Highest performance: IXXX200N65B4\nreasonable performance: IXXX110N65B4H1\ntesla used IKW75N60TFKSA1
+Highest performance: AUIRGPS4067D1\nreasonable performance: IXXX110N65B4H1\ntesla used IKW75N60TFKSA1
 $Comp
 L R-2512 R1
 U 1 1 58134A7B
@@ -680,12 +680,10 @@ F 3 "" H 10350 5250 60  0000 C CNN
 $EndComp
 Text Notes 600  8300 0    60   ~ 0
 The plan is to design it for 70kw continuous, 200kw peak\n\nSo, at 400v you need 175 Amp per phase (70kw x 2.5).\nThat is 30A per IGBT\n\nAt 30A, 0.9v Vce = 27W per transistor\n\nAt 45°C ambient temperature, if we want 75°C\nJunction temp, its a 30°C dT, and we need a\ntotal Rthja < 1.1°C/W\n\n0.15°C/W RthCS = thermal resistance,\ncase to heat sink (from the device data sheet). \n\n\n\n\n\n\n
-Text Notes 5950 6350 0    60   ~ 0
+Text Notes 6950 6950 0    60   ~ 0
 Sil-pad thermal: SPK4-0.006-00-11.512
-Text Notes 9300 1650 0    40   ~ 0
-Capacitors must be ably tu supply roughly 65% of battery\nsupplied current, so its important to have enough rms\ncurrent in the cap bank.\nIn this case, if we plan for 200kW at 500A, we should expect\na total RMS current of 325A in the capacitors.\nWe have 16uF*7*3 = 336uF
-Text Notes 11350 3300 0    60   ~ 0
-oxido y cobre
+Text Notes 9250 1750 0    40   ~ 0
+Capacitors must be ably tu supply roughly 65% of battery\nsupplied current, so its important to have enough rms\ncurrent in the cap bank.\nIn this case, if we plan for 200kW at 500A, we should expect\na total RMS current of 325A in the capacitors.\nWe have 16uF*7*3 = 336uF\n14Arms per cap -> 98Arms per module, 296Arms per inverter
 $Sheet
 S 2950 2750 1350 950 
 U 5822D62D
