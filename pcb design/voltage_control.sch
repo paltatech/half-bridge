@@ -1,0 +1,425 @@
+EESchema Schematic File Version 2
+LIBS:Abracon
+LIBS:ActiveSemi
+LIBS:Altera
+LIBS:AMS
+LIBS:AnalogDevices
+LIBS:AOS
+LIBS:Atmel
+LIBS:Bosch
+LIBS:conn-100mil
+LIBS:conn-2mm
+LIBS:conn-amphenol
+LIBS:conn-assmann
+LIBS:conn-cui
+LIBS:conn-fci
+LIBS:conn-jae
+LIBS:conn-linx
+LIBS:conn-molex
+LIBS:conn-tagconnect
+LIBS:conn-te
+LIBS:conn-test
+LIBS:DiodesInc
+LIBS:display
+LIBS:electomech-misc
+LIBS:_electromech
+LIBS:Fairchild
+LIBS:FTDI
+LIBS:Infineon
+LIBS:Intersil
+LIBS:Lattice
+LIBS:_linear
+LIBS:LinearTech
+LIBS:Littelfuse
+LIBS:logic-4000
+LIBS:logic-7400
+LIBS:logic-7400-new
+LIBS:_logic
+LIBS:MACOM
+LIBS:Macrofab
+LIBS:maxim
+LIBS:mechanical
+LIBS:Microchip
+LIBS:Micron
+LIBS:Murata
+LIBS:NXP
+LIBS:OceanOptics
+LIBS:onsemi
+LIBS:_passive
+LIBS:pasv-BelFuse
+LIBS:pasv-BiTech
+LIBS:pasv-Bourns
+LIBS:pasv-cap
+LIBS:pasv-ind
+LIBS:pasv-Murata
+LIBS:pasv-res
+LIBS:pasv-TDK
+LIBS:pasv-xtal
+LIBS:pcb
+LIBS:power
+LIBS:Recom
+LIBS:Richtek
+LIBS:semi-diode-DiodesInc
+LIBS:semi-diode-generic
+LIBS:semi-diode-MCC
+LIBS:semi-diode-NXP
+LIBS:semi-diode-OnSemi
+LIBS:semi-diode-Semtech
+LIBS:semi-diode-ST
+LIBS:semi-diode-Toshiba
+LIBS:_semi
+LIBS:semi-opto-generic
+LIBS:semi-opto-liteon
+LIBS:semi-thyristor-generic
+LIBS:semi-trans-AOS
+LIBS:semi-trans-DiodesInc
+LIBS:semi-trans-EPC
+LIBS:semi-trans-Fairchild
+LIBS:semi-trans-generic
+LIBS:semi-trans-Infineon
+LIBS:semi-trans-IRF
+LIBS:semi-trans-IXYS
+LIBS:semi-trans-NXP
+LIBS:semi-trans-OnSemi
+LIBS:semi-trans-Panasonic
+LIBS:semi-trans-ST
+LIBS:semi-trans-TI
+LIBS:semi-trans-Toshiba
+LIBS:semi-trans-Vishay
+LIBS:silabs
+LIBS:skyworks
+LIBS:st_ic
+LIBS:ST
+LIBS:supertex
+LIBS:symbol
+LIBS:TexasInstruments
+LIBS:u-blox
+LIBS:Vishay
+LIBS:Winbond
+LIBS:Xilinx
+LIBS:paltatech
+LIBS:IGBT_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PNP Q19
+U 1 1 5856B1FC
+P 6350 4450
+AR Path="/5822D62D/5856AA02/5856B1FC" Ref="Q19"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B1FC" Ref="Q20"  Part="1" 
+F 0 "Q20" V 6500 4400 50  0000 L CNN
+F 1 "PNP" V 6350 4200 50  0000 L CNN
+F 2 "SMD_Packages:DPAK-2" H 6350 4450 60  0001 C CNN
+F 3 "" H 6350 4450 60  0000 C CNN
+F 4 "MJD2955T4G" H 6350 4450 60  0001 C CNN "mfg#"
+	1    6350 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 4350 6350 3850
+Wire Wire Line
+	6350 3850 6250 3850
+Wire Wire Line
+	6050 3850 5900 3850
+Wire Wire Line
+	6450 4500 6500 4500
+Wire Wire Line
+	6500 4500 6700 4500
+Wire Wire Line
+	6700 4500 7000 4500
+Wire Wire Line
+	7000 4500 7100 4500
+Wire Wire Line
+	6250 4500 6200 4500
+Wire Wire Line
+	6200 4500 6100 4500
+Text HLabel 6100 4500 0    60   Input ~ 0
+Vin
+Wire Wire Line
+	3950 3950 4000 3950
+$Comp
+L R-0603 R?
+U 1 1 5856B214
+P 3750 3750
+AR Path="/5822D62D/5856B214" Ref="R?"  Part="1" 
+AR Path="/5824556D/5856B214" Ref="R?"  Part="1" 
+AR Path="/58232371/5856B214" Ref="R?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B214" Ref="R76"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B214" Ref="R70"  Part="1" 
+F 0 "R76" V 3550 3750 50  0000 C CNN
+F 1 "10k" V 3650 3750 50  0000 C CNN
+F 2 "IPC7351-Nominal:RESC1608X50" H 3750 3750 50  0001 C CNN
+F 3 "" H 3750 3800 60  0000 C CNN
+F 4 "RES SMD 1k 5% [0603]" H 4500 4300 60  0001 C CNN "BOM"
+	1    3750 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R-0603 R?
+U 1 1 5856B21C
+P 4300 3550
+AR Path="/5822D62D/5856B21C" Ref="R?"  Part="1" 
+AR Path="/5824556D/5856B21C" Ref="R?"  Part="1" 
+AR Path="/58232371/5856B21C" Ref="R?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B21C" Ref="R77"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B21C" Ref="R71"  Part="1" 
+F 0 "R77" V 4200 3450 50  0000 C CNN
+F 1 "10k" V 4200 3650 50  0000 C CNN
+F 2 "IPC7351-Nominal:RESC1608X50" H 4300 3550 50  0001 C CNN
+F 3 "" H 4300 3600 60  0000 C CNN
+F 4 "RES SMD 1k 5% [0603]" H 5050 4100 60  0001 C CNN "BOM"
+	1    4300 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3850 4700 3850
+Wire Wire Line
+	4750 3300 4750 3550
+Wire Wire Line
+	4750 3550 4750 3850
+Wire Wire Line
+	4750 3850 4750 3950
+Wire Wire Line
+	4750 3550 4400 3550
+Wire Wire Line
+	4200 3550 3950 3550
+Wire Wire Line
+	3950 3300 3950 3550
+Wire Wire Line
+	3950 3550 3950 3750
+Wire Wire Line
+	3850 3750 3950 3750
+Wire Wire Line
+	3950 3750 4000 3750
+Connection ~ 3950 3750
+Wire Wire Line
+	5000 3950 5100 3950
+Wire Wire Line
+	5100 3950 5200 3950
+Connection ~ 4750 3850
+Wire Wire Line
+	5200 3750 5150 3750
+Wire Wire Line
+	5150 3750 5150 3550
+Wire Wire Line
+	5150 3550 6700 3550
+Wire Wire Line
+	6700 3550 6700 4500
+Connection ~ 6700 4500
+$Comp
+L C-ALUM-6.3mm C?
+U 1 1 5856B237
+P 7000 3850
+AR Path="/5822D62D/5856B237" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856B237" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B237" Ref="C70"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B237" Ref="C62"  Part="1" 
+F 0 "C70" H 7113 3896 50  0000 L CNN
+F 1 "47uF 50v" H 7113 3805 50  0000 L CNN
+F 2 "w_smd_cap:c_elec_6.3x7.7" H 7000 3850 50  0001 C CNN
+F 3 "" H 6990 3825 60  0000 C CNN
+F 4 "EEE-FK1H470XP" H 7000 3850 60  0001 C CNN "mfg#"
+	1    7000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4500 7000 3950
+Text HLabel 7050 3550 2    60   Input ~ 0
+GND_ctrl
+Wire Wire Line
+	7050 3550 7000 3550
+Wire Wire Line
+	7000 3550 7000 3750
+Wire Wire Line
+	3050 3750 3650 3750
+$Comp
+L C-0603 C?
+U 1 1 5856B245
+P 4300 3300
+AR Path="/5822D62D/5856B245" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856B245" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B245" Ref="C67"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B245" Ref="C59"  Part="1" 
+F 0 "C67" H 4413 3346 50  0000 L CNN
+F 1 "10nF" H 4413 3255 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 4300 3300 50  0001 C CNN
+F 3 "" H 4290 3275 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 5100 3850 60  0001 C CNN "BOM"
+	1    4300 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 3300 4400 3300
+Connection ~ 4750 3550
+Wire Wire Line
+	4200 3300 3950 3300
+Connection ~ 3950 3550
+$Comp
+L R-0603 R?
+U 1 1 5856B251
+P 4900 3950
+AR Path="/5822D62D/5856B251" Ref="R?"  Part="1" 
+AR Path="/5824556D/5856B251" Ref="R?"  Part="1" 
+AR Path="/58232371/5856B251" Ref="R?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B251" Ref="R78"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B251" Ref="R72"  Part="1" 
+F 0 "R78" V 4700 3950 50  0000 C CNN
+F 1 "10k" V 4800 3950 50  0000 C CNN
+F 2 "IPC7351-Nominal:RESC1608X50" H 4900 3950 50  0001 C CNN
+F 3 "" H 4900 4000 60  0000 C CNN
+F 4 "RES SMD 1k 5% [0603]" H 5650 4500 60  0001 C CNN "BOM"
+	1    4900 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3950 4800 3950
+$Comp
+L C-0603 C?
+U 1 1 5856B25A
+P 5100 4100
+AR Path="/5822D62D/5856B25A" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856B25A" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B25A" Ref="C69"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B25A" Ref="C61"  Part="1" 
+F 0 "C69" H 5213 4146 50  0000 L CNN
+F 1 "10nF" H 5213 4055 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 5100 4100 50  0001 C CNN
+F 3 "" H 5090 4075 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 5900 4650 60  0001 C CNN "BOM"
+	1    5100 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 4000 5100 3950
+Connection ~ 5100 3950
+Wire Wire Line
+	5100 4250 5100 4200
+Wire Wire Line
+	3050 4250 3950 4250
+Wire Wire Line
+	3950 4250 5100 4250
+Wire Wire Line
+	3950 3950 3950 4250
+Connection ~ 3950 4250
+$Comp
+L OPA2376AID U?
+U 1 1 5856B26A
+P 4300 3850
+AR Path="/5824556D/5856B26A" Ref="U?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B26A" Ref="U12"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B26A" Ref="U9"  Part="1" 
+F 0 "U12" H 4450 4000 50  0000 C CNN
+F 1 "OPA2172" H 4300 3600 50  0000 C CNN
+F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 4300 3600 50  0001 C CNN
+F 3 "" V 4300 4000 60  0000 C CNN
+F 4 "OPA2172IDR" H 4300 3850 60  0001 C CNN "#mfg"
+F 5 "IC TI OPA2376AID" H 4300 3500 60  0001 C CNN "BOM"
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPA2376AID U?
+U 2 1 5856B273
+P 5500 3850
+AR Path="/5824556D/5856B273" Ref="U?"  Part="2" 
+AR Path="/5824556D/5856AA02/5856B273" Ref="U12"  Part="2" 
+AR Path="/5822D62D/5856AA02/5856B273" Ref="U9"  Part="2" 
+F 0 "U12" H 5600 4000 50  0000 C CNN
+F 1 "OPA2172" H 5500 3600 50  0000 C CNN
+F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 5500 3600 50  0001 C CNN
+F 3 "" V 5500 4000 60  0000 C CNN
+F 4 "OPA2172IDR" H 5500 3850 60  0001 C CNN "#mfg"
+F 5 "IC TI OPA2376AID" H 5500 3500 60  0001 C CNN "BOM"
+	2    5500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPA2376AID U?
+U 3 1 5856B5B6
+P 5100 5250
+AR Path="/5824556D/5856B5B6" Ref="U?"  Part="3" 
+AR Path="/5824556D/5856AA02/5856B5B6" Ref="U12"  Part="3" 
+AR Path="/5822D62D/5856AA02/5856B5B6" Ref="U9"  Part="3" 
+F 0 "U12" H 5230 5296 50  0000 L CNN
+F 1 "OPA2172" H 5230 5205 50  0000 L CNN
+F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 5100 5000 50  0001 C CNN
+F 3 "" V 5100 5400 60  0000 C CNN
+F 4 "OPA2172IDR" H 5100 5250 60  0001 C CNN "#mfg"
+F 5 "IC TI OPA2376AID" H 5100 4900 60  0001 C CNN "BOM"
+	3    5100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-0603 C?
+U 1 1 5856B5EA
+P 4800 5250
+AR Path="/5822D62D/5856B5EA" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856B5EA" Ref="C?"  Part="1" 
+AR Path="/5824556D/5856AA02/5856B5EA" Ref="C68"  Part="1" 
+AR Path="/5822D62D/5856AA02/5856B5EA" Ref="C60"  Part="1" 
+F 0 "C68" H 4913 5296 50  0000 L CNN
+F 1 "100nF" H 4913 5205 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 4800 5250 50  0001 C CNN
+F 3 "" H 4790 5225 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 5600 5800 60  0001 C CNN "BOM"
+	1    4800 5250
+	-1   0    0    1   
+$EndComp
+Text HLabel 7100 4500 2    60   Output ~ 0
+Vout
+Connection ~ 7000 4500
+Text HLabel 4750 4700 0    60   Input ~ 0
+VCC
+Text HLabel 4750 5800 0    60   Input ~ 0
+-VCC
+Wire Wire Line
+	4750 5800 4800 5800
+Wire Wire Line
+	4800 5800 5100 5800
+Wire Wire Line
+	5100 5800 5100 5650
+Wire Wire Line
+	5100 4850 5100 4700
+Wire Wire Line
+	5100 4700 4800 4700
+Wire Wire Line
+	4800 4700 4750 4700
+Text HLabel 3050 3750 0    60   Input ~ 0
+PWM
+Text HLabel 3050 4250 0    60   Input ~ 0
+GND_ctrl
+Wire Wire Line
+	4800 5800 4800 5350
+Connection ~ 4800 5800
+Wire Wire Line
+	4800 5150 4800 4700
+Connection ~ 4800 4700
+Text Notes 5850 3950 0    30   ~ 0
++-75mA output
+$Comp
+L R-0805 R73
+U 1 1 58575342
+P 6150 3850
+AR Path="/5822D62D/5856AA02/58575342" Ref="R73"  Part="1" 
+AR Path="/5824556D/5856AA02/58575342" Ref="R79"  Part="1" 
+F 0 "R79" V 6100 4000 40  0000 C CNN
+F 1 "100R" V 6150 3850 30  0000 C CNN
+F 2 "IPC7351-Nominal:RESC2012X50" H 6150 3850 50  0001 C CNN
+F 3 "" H 6150 3900 60  0000 C CNN
+F 4 "RES SMD 1k 5% [0805]" H 6900 4400 60  0001 C CNN "BOM"
+	1    6150 3850
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
