@@ -134,17 +134,9 @@ Wire Wire Line
 Wire Wire Line
 	6050 3850 5900 3850
 Wire Wire Line
-	6450 4500 6500 4500
+	6450 4500 7100 4500
 Wire Wire Line
-	6500 4500 6700 4500
-Wire Wire Line
-	6700 4500 7000 4500
-Wire Wire Line
-	7000 4500 7100 4500
-Wire Wire Line
-	6250 4500 6200 4500
-Wire Wire Line
-	6200 4500 6100 4500
+	6100 4500 6250 4500
 Text HLabel 6100 4500 0    60   Input ~ 0
 Vin
 Wire Wire Line
@@ -186,28 +178,18 @@ $EndComp
 Wire Wire Line
 	4750 3850 4700 3850
 Wire Wire Line
-	4750 3300 4750 3550
-Wire Wire Line
-	4750 3550 4750 3850
-Wire Wire Line
-	4750 3850 4750 3950
+	4750 3300 4750 3950
 Wire Wire Line
 	4750 3550 4400 3550
 Wire Wire Line
 	4200 3550 3950 3550
 Wire Wire Line
-	3950 3300 3950 3550
+	3950 3300 3950 3750
 Wire Wire Line
-	3950 3550 3950 3750
-Wire Wire Line
-	3850 3750 3950 3750
-Wire Wire Line
-	3950 3750 4000 3750
+	3850 3750 4000 3750
 Connection ~ 3950 3750
 Wire Wire Line
-	5000 3950 5100 3950
-Wire Wire Line
-	5100 3950 5200 3950
+	5000 3950 5200 3950
 Connection ~ 4750 3850
 Wire Wire Line
 	5200 3750 5150 3750
@@ -307,9 +289,7 @@ Connection ~ 5100 3950
 Wire Wire Line
 	5100 4250 5100 4200
 Wire Wire Line
-	3050 4250 3950 4250
-Wire Wire Line
-	3950 4250 5100 4250
+	3050 4250 5100 4250
 Wire Wire Line
 	3950 3950 3950 4250
 Connection ~ 3950 4250
@@ -385,17 +365,13 @@ VCC
 Text HLabel 4750 5800 0    60   Input ~ 0
 -VCC
 Wire Wire Line
-	4750 5800 4800 5800
-Wire Wire Line
-	4800 5800 5100 5800
+	4750 5800 5100 5800
 Wire Wire Line
 	5100 5800 5100 5650
 Wire Wire Line
-	5100 4850 5100 4700
+	5100 4700 5100 4850
 Wire Wire Line
-	5100 4700 4800 4700
-Wire Wire Line
-	4800 4700 4750 4700
+	4750 4700 5100 4700
 Text HLabel 3050 3750 0    60   Input ~ 0
 PWM
 Text HLabel 3050 4250 0    60   Input ~ 0
