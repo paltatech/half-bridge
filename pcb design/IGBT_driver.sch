@@ -103,7 +103,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 5 7
 Title "Isolated IGBT driver "
 Date "2016-11-20"
 Rev "A"
@@ -10922,6 +10922,61 @@ F5 "VCC" I L 5350 6550 60
 F6 "-VCC" I L 5350 6750 60 
 F7 "PWM" I L 5350 6450 60 
 $EndSheet
+$Comp
+L GND #PWR013
+U 1 1 5856ED82
+P 4100 6600
+AR Path="/5822D62D/5856ED82" Ref="#PWR013"  Part="1" 
+AR Path="/5824556D/5856ED82" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 4100 6600 30  0001 C CNN
+F 1 "GND" H 4100 6530 30  0001 C CNN
+F 2 "" H 4100 6600 60  0000 C CNN
+F 3 "" H 4100 6600 60  0000 C CNN
+	1    4100 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-1206 C?
+U 1 1 58572DD3
+P 5800 5150
+AR Path="/58232371/58572DD3" Ref="C?"  Part="1" 
+AR Path="/5822D62D/58572DD3" Ref="C72"  Part="1" 
+AR Path="/5824556D/58572DD3" Ref="C74"  Part="1" 
+F 0 "C74" H 5600 5200 50  0000 L CNN
+F 1 "10uF 50v" H 5400 5100 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC3216X70" H 5800 5150 50  0001 C CNN
+F 3 "" H 5790 5125 60  0000 C CNN
+F 4 "CL31A106KBHNNNE" H 5800 5150 60  0001 C CNN "mfg#"
+	1    5800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-1206 C?
+U 1 1 58573036
+P 5800 4950
+AR Path="/58232371/58573036" Ref="C?"  Part="1" 
+AR Path="/5822D62D/58573036" Ref="C71"  Part="1" 
+AR Path="/5824556D/58573036" Ref="C73"  Part="1" 
+F 0 "C73" H 5600 5000 50  0000 L CNN
+F 1 "10uF 50v" H 5400 4900 50  0000 L CNN
+F 2 "IPC7351-Nominal:CAPC3216X70" H 5800 4950 50  0001 C CNN
+F 3 "" H 5790 4925 60  0000 C CNN
+F 4 "CL31A106KBHNNNE" H 5800 4950 60  0001 C CNN "mfg#"
+	1    5800 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 5950 5500 2    30   ~ 0
+Keep decoupling caps\nclose to the transistors
+Text Notes 6200 5450 0    60   ~ 0
+Horrible transistors.\nLow speed (2MHz), low-ish power.\n\nCheck MJB44H11
+Text Notes 4550 5300 0    60   ~ 0
+C para la base?
+Text HLabel 5300 6550 0    60   Input ~ 0
++15V
+Text HLabel 5250 6750 0    60   Input ~ 0
+-8V
+Text HLabel 7500 4200 2    60   Input ~ 0
+-VEE
 Wire Wire Line
 	4950 3900 7500 3900
 Wire Wire Line
@@ -11186,49 +11241,6 @@ Connection ~ 6000 4500
 Wire Wire Line
 	5750 5050 6000 5050
 Connection ~ 5200 6450
-$Comp
-L GND #PWR013
-U 1 1 5856ED82
-P 4100 6600
-AR Path="/5822D62D/5856ED82" Ref="#PWR013"  Part="1" 
-AR Path="/5824556D/5856ED82" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 4100 6600 30  0001 C CNN
-F 1 "GND" H 4100 6530 30  0001 C CNN
-F 2 "" H 4100 6600 60  0000 C CNN
-F 3 "" H 4100 6600 60  0000 C CNN
-	1    4100 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L C-1206 C?
-U 1 1 58572DD3
-P 5800 5150
-AR Path="/58232371/58572DD3" Ref="C?"  Part="1" 
-AR Path="/5822D62D/58572DD3" Ref="C72"  Part="1" 
-AR Path="/5824556D/58572DD3" Ref="C74"  Part="1" 
-F 0 "C74" H 5600 5200 50  0000 L CNN
-F 1 "10uF 50v" H 5400 5100 50  0000 L CNN
-F 2 "IPC7351-Nominal:CAPC3216X70" H 5800 5150 50  0001 C CNN
-F 3 "" H 5790 5125 60  0000 C CNN
-F 4 "CL31A106KBHNNNE" H 5800 5150 60  0001 C CNN "mfg#"
-	1    5800 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L C-1206 C?
-U 1 1 58573036
-P 5800 4950
-AR Path="/58232371/58573036" Ref="C?"  Part="1" 
-AR Path="/5822D62D/58573036" Ref="C71"  Part="1" 
-AR Path="/5824556D/58573036" Ref="C73"  Part="1" 
-F 0 "C73" H 5600 5000 50  0000 L CNN
-F 1 "10uF 50v" H 5400 4900 50  0000 L CNN
-F 2 "IPC7351-Nominal:CAPC3216X70" H 5800 4950 50  0001 C CNN
-F 3 "" H 5790 4925 60  0000 C CNN
-F 4 "CL31A106KBHNNNE" H 5800 4950 60  0001 C CNN "mfg#"
-	1    5800 4950
-	1    0    0    -1  
-$EndComp
 Connection ~ 5800 5050
 Wire Wire Line
 	5800 4850 5800 4800
@@ -11243,23 +11255,13 @@ Connection ~ 6000 5300
 Wire Wire Line
 	4500 6950 4500 6600
 Connection ~ 4650 6950
-Text Notes 5950 5500 2    30   ~ 0
-Keep decoupling caps\nclose to the transistors
-Text Notes 6200 5450 0    60   ~ 0
-Horrible transistors.\nLow speed (2MHz), low-ish power.\n\nCheck MJB44H11
-Text Notes 4550 5300 0    60   ~ 0
-C para la base?
 Wire Wire Line
 	4650 7050 4750 7050
 Wire Wire Line
 	5350 6650 4950 6650
 Connection ~ 4950 6650
-Text HLabel 5300 6550 0    60   Input ~ 0
-+15V
 Wire Wire Line
 	5300 6550 5350 6550
-Text HLabel 5250 6750 0    60   Input ~ 0
--8V
 Wire Wire Line
 	5250 6750 5350 6750
 Wire Wire Line
@@ -11267,10 +11269,8 @@ Wire Wire Line
 Wire Wire Line
 	5300 6900 5350 6900
 Connection ~ 5300 6750
-Text HLabel 6400 6900 2    60   Input ~ 0
--VEE
 Wire Wire Line
 	6400 6900 6350 6900
-Text HLabel 7500 4200 2    60   Input ~ 0
+Text HLabel 6400 6900 2    60   Input ~ 0
 -VEE
 $EndSCHEMATC
