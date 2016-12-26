@@ -1131,4 +1131,10 @@ Wire Wire Line
 Connection ~ 1200 4600
 Text Notes 1600 5900 0    60   ~ 0
 check MGJ2D241509SC
+Text Notes 4250 6800 0    160  ~ 32
+Make it +/- 15V for IGBTs >10kw.\nAlso, consider controlling the pwm from the controller\nto phase shift and spread harmonics
+Wire Notes Line
+	6100 2500 6100 5750
+Wire Notes Line
+	6200 5750 6200 2500
 $EndSCHEMATC

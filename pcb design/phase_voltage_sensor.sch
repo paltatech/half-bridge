@@ -282,7 +282,7 @@ Wire Wire Line
 Text Notes 3200 4300 0    40   ~ 0
 These particular 1206\nresistors are rated at 800V each.\nPut slots though
 Text Notes 900  1550 0    260  ~ 52
-0-650V phase voltage measurement\nwith isolation amplifier
+0-650V phase voltage measurement\nusing isolation amplifier
 $Comp
 L BZX84 DZ6
 U 1 1 585B11E2
