@@ -678,10 +678,10 @@ F 3 "" H 10350 5250 60  0000 C CNN
 	1    10350 5250
 	1    0    0    -1  
 $EndComp
-Text Notes 4800 8200 0    50   ~ 0
-The plan is to design it for 70kw continuous, 200kw peak\n\nSo, at 400v you need 175 Amp per phase (70kw x 2.5).\nThat is 30A per IGBT\n\nAt 30A, 0.9v Vce = 27W per transistor\n\nAt 45°C ambient temperature, if we want 75°C\nJunction temp, its a 30°C dT, and we need a\ntotal Rthja < 1.1°C/W\n\n0.15°C/W RthCS = thermal resistance,\ncase to heat sink (from the device data sheet). \n\n\n\n\n\n\n
-Text Notes 7000 6950 0    60   ~ 0
-Sil-pad thermal: SPK4-0.006-00-11.512
+Text Notes 4800 8250 0    50   ~ 0
+The plan is to design it for 70kw continuous, 200kw peak\n\nSo, at 400v you need 175 Amp per phase (70kw current  x 2.5).\nThat is 30A per IGBT\n\nAt 30A, 0.9v Vce = 27W per transistor\naim to 50-50 power losses (switching and sat)\n\nAt 45°C ambient temperature, if we want 75°C\nJunction temp, its a 30°C dT, and we need a\ntotal Rthja < 1.1°C/W\n\n0.15°C/W RthCS = thermal resistance,\ncase to heat sink (from the device data sheet). \n\n\n\n\n\n\n
+Text Notes 7400 7000 0    60   ~ 0
+Sil-pad thermal: SPK4-0.006-00-11.512\nkapton?\nhard anodized aluminum?\ngel immersion? (could help with igbt-heatsink cleareances)
 Text Notes 9200 1450 0    40   ~ 0
 Capacitors must be ably tu supply roughly 65% of battery\nsupplied current, so its important to have enough rms\ncurrent in the cap bank.\nIn this case, if we plan for 200kW at 500A, we should expect\na total RMS current of 325A in the capacitors.\nWe have 16uF*7*3 = 336uF\n14Arms per cap -> 98Arms per module, 296Arms per inverter
 $Sheet
@@ -757,10 +757,10 @@ FAULT
 Text Label 1100 2150 2    50   ~ 0
 RESET
 $Comp
-L GND #PWR4
+L GND #PWR01
 U 1 1 5831A3A1
 P 2150 1800
-F 0 "#PWR4" H 2150 1800 30  0001 C CNN
+F 0 "#PWR01" H 2150 1800 30  0001 C CNN
 F 1 "GND" H 2150 1730 30  0001 C CNN
 F 2 "" H 2150 1800 60  0000 C CNN
 F 3 "" H 2150 1800 60  0000 C CNN
@@ -862,10 +862,10 @@ F 4 "4-794627-0" H 1850 2100 60  0001 C CNN "mfg#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR5
+L GND #PWR02
 U 1 1 58386BF0
 P 2800 4550
-F 0 "#PWR5" H 2800 4550 30  0001 C CNN
+F 0 "#PWR02" H 2800 4550 30  0001 C CNN
 F 1 "GND" H 2800 4480 30  0001 C CNN
 F 2 "" H 2800 4550 60  0000 C CNN
 F 3 "" H 2800 4550 60  0000 C CNN
@@ -915,10 +915,10 @@ F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 2650 6850 60  0001 C CNN "BOM"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L GND #PWR03
 U 1 1 58387D39
 P 1850 6600
-F 0 "#PWR2" H 1850 6600 30  0001 C CNN
+F 0 "#PWR03" H 1850 6600 30  0001 C CNN
 F 1 "GND" H 1850 6530 30  0001 C CNN
 F 2 "" H 1850 6600 60  0000 C CNN
 F 3 "" H 1850 6600 60  0000 C CNN
@@ -1001,10 +1001,10 @@ NoConn ~ 2200 2850
 Text GLabel 850  2700 0    60   Input ~ 0
 24v
 $Comp
-L GND #PWR1
+L GND #PWR04
 U 1 1 583AB791
 P 1750 3150
-F 0 "#PWR1" H 1750 3150 30  0001 C CNN
+F 0 "#PWR04" H 1750 3150 30  0001 C CNN
 F 1 "GND" H 1750 3080 30  0001 C CNN
 F 2 "" H 1750 3150 60  0000 C CNN
 F 3 "" H 1750 3150 60  0000 C CNN
@@ -1012,10 +1012,10 @@ F 3 "" H 1750 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR3
+L GND #PWR05
 U 1 1 583AF86E
 P 2050 2050
-F 0 "#PWR3" H 2050 2050 30  0001 C CNN
+F 0 "#PWR05" H 2050 2050 30  0001 C CNN
 F 1 "GND" H 2050 1980 30  0001 C CNN
 F 2 "" H 2050 2050 60  0000 C CNN
 F 3 "" H 2050 2050 60  0000 C CNN
@@ -1665,10 +1665,10 @@ Wire Wire Line
 	4400 6550 4400 6650
 Connection ~ 4400 6650
 $Comp
-L GND #PWR6
+L GND #PWR06
 U 1 1 585B4E01
 P 2850 6750
-F 0 "#PWR6" H 2850 6750 30  0001 C CNN
+F 0 "#PWR06" H 2850 6750 30  0001 C CNN
 F 1 "GND" H 2850 6680 30  0001 C CNN
 F 2 "" H 2850 6750 60  0000 C CNN
 F 3 "" H 2850 6750 60  0000 C CNN
@@ -1684,10 +1684,10 @@ Text GLabel 2850 6350 0    50   Input ~ 0
 Wire Wire Line
 	2850 6350 2950 6350
 $Comp
-L MOUNTING_HOLE HOLE?
+L MOUNTING_HOLE HOLE1
 U 1 1 585C45CA
 P 10150 6500
-F 0 "HOLE?" H 10277 6553 60  0000 L CNN
+F 0 "HOLE1" H 10277 6553 60  0000 L CNN
 F 1 "MH" H 10277 6447 60  0000 L CNN
 F 2 "" H 10150 6500 60  0000 C CNN
 F 3 "" H 10150 6500 60  0000 C CNN
@@ -1696,10 +1696,10 @@ F 3 "" H 10150 6500 60  0000 C CNN
 $EndComp
 NoConn ~ 9950 6500
 $Comp
-L MOUNTING_HOLE HOLE?
+L MOUNTING_HOLE HOLE2
 U 1 1 585C56CA
 P 10150 6750
-F 0 "HOLE?" H 10277 6803 60  0000 L CNN
+F 0 "HOLE2" H 10277 6803 60  0000 L CNN
 F 1 "MH" H 10277 6697 60  0000 L CNN
 F 2 "" H 10150 6750 60  0000 C CNN
 F 3 "" H 10150 6750 60  0000 C CNN
@@ -1707,10 +1707,10 @@ F 3 "" H 10150 6750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOUNTING_HOLE HOLE?
+L MOUNTING_HOLE HOLE4
 U 1 1 585C5DBC
 P 10700 6750
-F 0 "HOLE?" H 10827 6803 60  0000 L CNN
+F 0 "HOLE4" H 10827 6803 60  0000 L CNN
 F 1 "MH" H 10827 6697 60  0000 L CNN
 F 2 "" H 10700 6750 60  0000 C CNN
 F 3 "" H 10700 6750 60  0000 C CNN
@@ -1718,10 +1718,10 @@ F 3 "" H 10700 6750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L HV #SYM?
+L HV #SYM1
 U 1 1 585C631E
 P 4000 2300
-F 0 "#SYM?" H 4000 2300 60  0001 C CNN
+F 0 "#SYM1" H 4000 2300 60  0001 C CNN
 F 1 "HV" H 4000 2300 60  0001 C CNN
 F 2 "" H 3900 2200 60  0000 C CNN
 F 3 "" H 4000 2300 60  0000 C CNN
@@ -1729,10 +1729,10 @@ F 3 "" H 4000 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOUNTING_HOLE HOLE?
+L MOUNTING_HOLE HOLE3
 U 1 1 585C7B75
 P 10700 6500
-F 0 "HOLE?" H 10827 6553 60  0000 L CNN
+F 0 "HOLE3" H 10827 6553 60  0000 L CNN
 F 1 "MH" H 10827 6447 60  0000 L CNN
 F 2 "" H 10700 6500 60  0000 C CNN
 F 3 "" H 10700 6500 60  0000 C CNN
@@ -1743,10 +1743,10 @@ NoConn ~ 9950 6750
 NoConn ~ 10500 6750
 NoConn ~ 10500 6500
 $Comp
-L C-0603 C?
+L C-0603 C77
 U 1 1 585F404D
 P 1150 2300
-F 0 "C?" H 1262 2346 50  0000 L CNN
+F 0 "C77" H 1262 2346 50  0000 L CNN
 F 1 "100pF" H 1262 2255 50  0000 L CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 1150 2300 50  0001 C CNN
 F 3 "" H 1140 2275 60  0000 C CNN
@@ -1755,10 +1755,10 @@ F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 1950 2850 60  0001 C CNN "BOM"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C-0603 C?
+L C-0603 C82
 U 1 1 585F49C0
 P 2300 2300
-F 0 "C?" H 2412 2346 50  0000 L CNN
+F 0 "C82" H 2412 2346 50  0000 L CNN
 F 1 "100pF" H 2412 2255 50  0000 L CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 2300 2300 50  0001 C CNN
 F 3 "" H 2290 2275 60  0000 C CNN
@@ -1770,10 +1770,10 @@ Wire Wire Line
 	2300 2200 2300 1950
 Connection ~ 2300 1950
 $Comp
-L GND #PWR?
+L GND #PWR07
 U 1 1 585F4F4E
 P 2300 2400
-F 0 "#PWR?" H 2300 2400 30  0001 C CNN
+F 0 "#PWR07" H 2300 2400 30  0001 C CNN
 F 1 "GND" H 2300 2330 30  0001 C CNN
 F 2 "" H 2300 2400 60  0000 C CNN
 F 3 "" H 2300 2400 60  0000 C CNN
@@ -1781,10 +1781,10 @@ F 3 "" H 2300 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR08
 U 1 1 585F510F
 P 1150 2400
-F 0 "#PWR?" H 1150 2400 30  0001 C CNN
+F 0 "#PWR08" H 1150 2400 30  0001 C CNN
 F 1 "GND" H 1150 2330 30  0001 C CNN
 F 2 "" H 1150 2400 60  0000 C CNN
 F 3 "" H 1150 2400 60  0000 C CNN
