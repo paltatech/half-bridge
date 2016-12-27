@@ -537,7 +537,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 4450 2250 4350
 Wire Wire Line
-	1600 4350 1600 4150
+	1600 3550 1600 4350
 Wire Wire Line
 	1600 4150 2250 4150
 Wire Wire Line
@@ -628,7 +628,7 @@ Connection ~ 1200 4050
 Wire Wire Line
 	850  4050 950  4050
 Wire Wire Line
-	1200 4650 1200 4550
+	1200 4550 1200 4650
 Wire Wire Line
 	1600 4650 1600 4550
 Wire Wire Line
@@ -1124,10 +1124,10 @@ F 3 "" H 5900 2750 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 5900 2800
-Text HLabel 850  4600 0    50   Input ~ 0
+Text HLabel 1150 4600 0    50   Input ~ 0
 GND
 Wire Wire Line
-	850  4600 1200 4600
+	1150 4600 1200 4600
 Connection ~ 1200 4600
 Text Notes 1600 5900 0    60   ~ 0
 check MGJ2D241509SC
@@ -2453,4 +2453,31 @@ EndData
 $EndBitmap
 Text Notes 5550 7750 0    30   ~ 0
 Always check the actual capacitance you\nget at the operating voltage. These curves\nare for samsung's MLCC caps
+Text Notes 5750 3850 0    20   ~ 0
+weird way to draw a\ntransformer... fix it
+$Comp
+L C-0603 C?
+U 1 1 586279E1
+P 1050 3550
+F 0 "C?" V 1000 3450 50  0000 R CNN
+F 1 "100pF" V 1100 3450 50  0000 R CNN
+F 2 "IPC7351-Nominal:CAPC1608X55" H 1050 3550 50  0001 C CNN
+F 3 "" H 1040 3525 60  0000 C CNN
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 1850 4100 60  0001 C CNN "BOM"
+	1    1050 3550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1600 3550 1150 3550
+Connection ~ 1600 4150
+Wire Wire Line
+	950  3550 850  3550
+Text HLabel 850  3550 0    50   Input ~ 0
+SYNC
+Text Notes 850  3400 0    30   ~ 0
+About syncing:\n* External source frequency must be\nhigher than configured frequency\n(configured with RT)\n* 15nsec to 150nsec pulse width\n* 1.5V to 3.0V signal amplitude\n\nWhy syncing?\nPhase voltage sampling could be\nmeasured at the same point in\nthe power supply ripple.\nYou can avoid switching the supply\npower mosfet at the same time of\nthe gate drive signal
+Text Notes 1600 5350 0    40   ~ 0
+Frequency setting with RT.\nR = (1/F - 172E-9) / 182e-12\n\nSo, eval board was switching at 200khz.\nFigure out why, this transformer is supposed to be operated at 500khz
+Text Notes 1600 4600 2    20   ~ 0
+10k ohm would set\nthis to 500KHz...
 $EndSCHEMATC

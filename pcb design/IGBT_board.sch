@@ -933,8 +933,8 @@ Text Label 2850 5600 2    50   ~ 0
 PWR_GOOD
 Text Label 1700 4850 0    50   ~ 0
 PWR_GOOD
-Text Notes 2050 1300 0    300  ~ 60
-HALF BRIDGE IGBT MODULE
+Text Notes 1000 1250 0    300  ~ 60
+PHASE LEG IGBT MODULE
 Text GLabel 2400 2700 2    50   Input ~ 0
 3.3v
 $Comp
