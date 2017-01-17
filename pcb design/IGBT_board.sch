@@ -105,10 +105,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
 Title "IGBT module"
-Date "2016-11-24"
+Date "2017-01-17"
 Rev "A"
-Comp "PALTA TECH S.A."
-Comment1 ""
+Comp "Copyright PALTA TECH S.A."
+Comment1 "This documentation describes Open Hardware and is licensed under the CERN OHL v. 1.2"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -930,12 +930,12 @@ $EndComp
 $Comp
 L OSHW-SCHEM-PCB10mm SYM1
 U 1 1 583B5122
-P 7150 7200
-F 0 "SYM1" H 7284 7200 50  0001 L CNN
-F 1 "OSHW-SCHEM-PCB10mm" H 7150 7150 50  0001 C CNN
-F 2 "w_logo:Logo_silk_OSHW_12x13mm" H 7200 7100 50  0001 C CNN
-F 3 "" H 7150 7200 50  0000 C CNN
-	1    7150 7200
+P 7100 7150
+F 0 "SYM1" H 7234 7150 50  0001 L CNN
+F 1 "OSHW-SCHEM-PCB10mm" H 7100 7100 50  0001 C CNN
+F 2 "w_logo:Logo_silk_OSHW_12x13mm" H 7150 7050 50  0001 C CNN
+F 3 "" H 7100 7150 50  0000 C CNN
+	1    7100 7150
 	1    0    0    -1  
 $EndComp
 $Comp
