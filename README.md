@@ -6,7 +6,7 @@ This is the hardware repository of a 3 phase inverter, UNTESTED but designed wit
 * Watercooled
 * Embedded security features (desaturation, soft turn off, reinforced isolation)
 
-![Alt text](http://cdn.rawgit.com/paltatech/VESC-controller/master/doc/images/schematic_toplevel.svg)
+![Alt text](http://cdn.rawgit.com/paltatech/half-bridge/master/doc/images/schematic_toplevel.svg)
 ![Alt text](doc/images/assembly1.png)
 ![Alt text](doc/images/3d board2.png)
 
