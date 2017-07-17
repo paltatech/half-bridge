@@ -1,4 +1,4 @@
-update=Thu 24 Nov 2016 07:39:29 PM ART
+update=dom 09 jul 2017 23:23:13 ART
 version=1
 last_client=kicad
 [cvpcb]
@@ -25,6 +25,16 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=schlib/page_layouts/basic.kicad_wks
+PlotDirectoryName=../doc/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=kicad-schlib/library
@@ -127,14 +137,4 @@ LibName95=schlib/library/u-blox
 LibName96=schlib/library/Vishay
 LibName97=schlib/library/Winbond
 LibName98=schlib/library/Xilinx
-LibName99=/home/marcos/electronica/paltatech/tools/paltatech
-[schematic_editor]
-version=1
-PageLayoutDescrFile=schlib/page_layouts/basic.kicad_wks
-PlotDirectoryName=../doc/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
+LibName99=/home/marcos/paltatech/tools/paltatech

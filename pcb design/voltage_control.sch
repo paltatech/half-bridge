@@ -423,7 +423,7 @@ Wire Wire Line
 Connection ~ 7400 3750
 $Bitmap
 Pos 5600 6700
-Scale 1.000000
+Scale 1,000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 13 00 00 02 55 08 02 00 00 00 2A 4E 3F 
 C2 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0E 74 00 00 0E 74 
@@ -1875,7 +1875,7 @@ Text Notes 800  5600 0    60   ~ 0
 Simulation: step response (0->90%) in 0.4msec\n100kHz PWM\n
 $Bitmap
 Pos 2250 6750
-Scale 1.000000
+Scale 1,000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 C3 00 00 02 4A 08 02 00 00 00 87 DF 00 
 C5 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0E 74 00 00 0E 74 
@@ -3379,4 +3379,6 @@ Text Notes 1100 2250 0    100  ~ 20
 0%  duty -> -1V\n100% duty ->  - 9V
 Text Notes 6400 4000 0    60   ~ 0
 Try to heatsink this pnp
+Text Notes 5750 3450 0    40   ~ 0
+AD8397 drives more current
 $EndSCHEMATC
