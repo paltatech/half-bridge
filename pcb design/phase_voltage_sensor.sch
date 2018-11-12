@@ -1,103 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:Abracon
-LIBS:ActiveSemi
-LIBS:Altera
-LIBS:AMS
-LIBS:AnalogDevices
-LIBS:AOS
-LIBS:Atmel
-LIBS:Bosch
-LIBS:conn-100mil
-LIBS:conn-2mm
-LIBS:conn-amphenol
-LIBS:conn-assmann
-LIBS:conn-cui
-LIBS:conn-fci
-LIBS:conn-jae
-LIBS:conn-linx
-LIBS:conn-molex
-LIBS:conn-tagconnect
-LIBS:conn-te
-LIBS:conn-test
-LIBS:DiodesInc
-LIBS:display
-LIBS:electomech-misc
-LIBS:_electromech
-LIBS:Fairchild
-LIBS:FTDI
-LIBS:Infineon
-LIBS:Intersil
-LIBS:Lattice
-LIBS:_linear
-LIBS:LinearTech
-LIBS:Littelfuse
-LIBS:logic-4000
-LIBS:logic-7400
-LIBS:logic-7400-new
-LIBS:_logic
-LIBS:MACOM
-LIBS:Macrofab
-LIBS:maxim
-LIBS:mechanical
-LIBS:Microchip
-LIBS:Micron
-LIBS:Murata
-LIBS:NXP
-LIBS:OceanOptics
-LIBS:onsemi
-LIBS:_passive
-LIBS:pasv-BelFuse
-LIBS:pasv-BiTech
-LIBS:pasv-Bourns
-LIBS:pasv-cap
-LIBS:pasv-ind
-LIBS:pasv-Murata
-LIBS:pasv-res
-LIBS:pasv-TDK
-LIBS:pasv-xtal
-LIBS:pcb
-LIBS:power
-LIBS:Recom
-LIBS:Richtek
-LIBS:semi-diode-DiodesInc
-LIBS:semi-diode-generic
-LIBS:semi-diode-MCC
-LIBS:semi-diode-NXP
-LIBS:semi-diode-OnSemi
-LIBS:semi-diode-Semtech
-LIBS:semi-diode-ST
-LIBS:semi-diode-Toshiba
-LIBS:_semi
-LIBS:semi-opto-generic
-LIBS:semi-opto-liteon
-LIBS:semi-thyristor-generic
-LIBS:semi-trans-AOS
-LIBS:semi-trans-DiodesInc
-LIBS:semi-trans-EPC
-LIBS:semi-trans-Fairchild
-LIBS:semi-trans-generic
-LIBS:semi-trans-Infineon
-LIBS:semi-trans-IRF
-LIBS:semi-trans-IXYS
-LIBS:semi-trans-NXP
-LIBS:semi-trans-OnSemi
-LIBS:semi-trans-Panasonic
-LIBS:semi-trans-ST
-LIBS:semi-trans-TI
-LIBS:semi-trans-Toshiba
-LIBS:semi-trans-Vishay
-LIBS:silabs
-LIBS:skyworks
-LIBS:st_ic
-LIBS:ST
-LIBS:supertex
-LIBS:symbol
-LIBS:TexasInstruments
-LIBS:u-blox
-LIBS:Vishay
-LIBS:Winbond
-LIBS:Xilinx
-LIBS:paltatech
+EESchema Schematic File Version 4
 LIBS:IGBT_board-cache
 EELAYER 26 0
 EELAYER END
@@ -130,26 +31,29 @@ GND2
 Text HLabel 3700 3450 0    60   Input ~ 0
 VDD2
 $Comp
-L C-1206 C78
+L pasv-cap:C-1206 C78
 U 1 1 585AE04F
 P 5100 3600
 F 0 "C78" H 4988 3554 50  0000 R CNN
 F 1 "100nF" H 4988 3645 50  0000 R CNN
 F 2 "IPC7351-Nominal:CAPC1608X55" H 5100 3600 50  0001 C CNN
 F 3 "" H 5090 3575 60  0000 C CNN
-F 4 "CAP MLCC 100pF C0G 50V 5% [1206]" H 5900 4150 60  0001 C CNN "BOM"
+F 4 "CAP MLCC 100pF C0G 50V 5% [0603]" H 5900 4150 60  0001 C CNN "BOM"
 	1    5100 3600
 	1    0    0    1   
 $EndComp
 $Comp
-L AMC1200 U10
+L IGBT_board-rescue:AMC1200-RESCUE-IGBT_board U10
 U 1 1 585AEFF8
 P 5900 3850
+AR Path="/585AEFF8" Ref="U10"  Part="1" 
+AR Path="/585ACB8D/585AEFF8" Ref="U10"  Part="1" 
 F 0 "U10" H 5900 4537 60  0000 C CNN
 F 1 "AMC1301" H 5900 4431 60  0000 C CNN
 F 2 "IPC7351-Nominal:SOIC127P1032X265-8" H 5800 3200 60  0001 C CNN
 F 3 "" H 5900 3850 60  0001 C CNN
 F 4 "AMC1301DWVR" H 6000 3400 60  0001 C CNN "#mfg"
+F 5 "AMC1301DWVR" H 0   0   60  0001 C CNN "MPN"
 	1    5900 3850
 	1    0    0    -1  
 $EndComp
@@ -164,7 +68,7 @@ Wire Wire Line
 Connection ~ 5100 3750
 Connection ~ 5100 3450
 $Comp
-L C-0603 C79
+L pasv-cap:C-0603 C79
 U 1 1 585AF5E7
 P 5100 4100
 F 0 "C79" H 5212 4146 50  0000 L CNN
@@ -186,7 +90,7 @@ Wire Wire Line
 Connection ~ 5100 3950
 Connection ~ 5100 4250
 $Comp
-L R-0603 R88
+L pasv-res:R-0603 R88
 U 1 1 585AF780
 P 4700 4250
 F 0 "R88" V 4600 4250 50  0000 C CNN
@@ -202,7 +106,7 @@ Wire Wire Line
 Text Notes 950  4950 0    60   ~ 12
 =1000/(2000000+2000)*650*8.2 = 2.66V differential output at 650V
 $Comp
-L R-1206 R84
+L pasv-res:R-1206 R84
 U 1 1 585AF9C1
 P 3900 3950
 F 0 "R84" V 4000 3950 50  0000 C CNN
@@ -211,11 +115,12 @@ F 2 "IPC7351-Nominal:RESC3216X60" H 3900 3950 50  0001 C CNN
 F 3 "" H 3900 4000 60  0000 C CNN
 F 4 "CHV1206-FX-1004ELF" H 3900 3950 60  0001 C CNN "#mfg"
 F 5 "RES SMD 1k 5% [1206]" H 4650 4500 60  0001 C CNN "BOM"
+F 6 "CHV1206-FX-1004ELF" H 0   0   60  0001 C CNN "MPN"
 	1    3900 3950
 	0    1    1    0   
 $EndComp
 $Comp
-L R-1206 R82
+L pasv-res:R-1206 R82
 U 1 1 585AFB0A
 P 3600 3950
 F 0 "R82" V 3700 3950 50  0000 C CNN
@@ -224,11 +129,12 @@ F 2 "IPC7351-Nominal:RESC3216X60" H 3600 3950 50  0001 C CNN
 F 3 "" H 3600 4000 60  0000 C CNN
 F 4 "CHV1206-FX-1004ELF" H 3600 3950 60  0001 C CNN "#mfg"
 F 5 "RES SMD 1k 5% [1206]" H 4350 4500 60  0001 C CNN "BOM"
+F 6 "CHV1206-FX-1004ELF" H 0   0   60  0001 C CNN "MPN"
 	1    3600 3950
 	0    1    1    0   
 $EndComp
 $Comp
-L R-0603 R85
+L pasv-res:R-0603 R85
 U 1 1 585AFCF2
 P 4400 4100
 F 0 "R85" V 4300 4100 50  0000 C CNN
@@ -256,7 +162,7 @@ These particular 1206\nresistors are rated at 800V each.\nPut slots though
 Text Notes 900  1550 0    260  ~ 52
 0-650V phase voltage measurement\nusing isolation amplifier
 $Comp
-L BZX84 DZ6
+L semi-diode-generic:BZX84 DZ6
 U 1 1 585B11E2
 P 4100 3600
 F 0 "DZ6" H 3950 3750 50  0000 L CNN
@@ -264,6 +170,7 @@ F 1 "5v" H 3950 3500 50  0000 L CNN
 F 2 "smd-semi:SOT-23" H 4100 3450 50  0001 C CNN
 F 3 "" H 4100 3600 60  0000 C CNN
 F 4 "BZX84-A5V1,215" H 4100 3600 60  0001 C CNN "#mfg"
+F 5 "BZX84-A5V1,215" H 0   0   60  0001 C CNN "MPN"
 	1    4100 3600
 	-1   0    0    -1  
 $EndComp
@@ -272,7 +179,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3500 4100 3450
 $Comp
-L R-0603 R83
+L pasv-res:R-0603 R83
 U 1 1 585B1392
 P 3900 3450
 F 0 "R83" V 3800 3450 50  0000 C CNN
@@ -288,7 +195,7 @@ Wire Wire Line
 	3800 3450 3700 3450
 Connection ~ 4100 3750
 $Comp
-L C-1206 C80
+L pasv-cap:C-1206 C80
 U 1 1 585B1E88
 P 6700 3600
 F 0 "C80" H 6813 3646 50  0000 L CNN
@@ -308,7 +215,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 3750 7450 3750
 $Comp
-L C-1206 C81
+L pasv-cap:C-1206 C81
 U 1 1 585B2111
 P 7150 3600
 F 0 "C81" H 7263 3646 50  0000 L CNN
@@ -5366,7 +5273,7 @@ VIN+
 Text Label 5100 4250 0    30   ~ 0
 VIN-
 $Comp
-L CONN-100MIL-F-1x1 J?
+L conn-100mil:CONN-100MIL-F-1x1 J?
 U 1 1 585BF086
 P 3200 3800
 AR Path="/5822D62D/585BF086" Ref="J?"  Part="1" 
@@ -7075,4 +6982,12 @@ E0 01 00 00 00 80 4C 10 F0 00 00 00 00 40 26 08 78 00 00 00 00 20 13 04 3C 00 00
 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Notes Line
+	7050 4300 7100 4300
+Wire Notes Line
+	7100 4300 7100 3900
+Wire Notes Line
+	7100 3900 7050 3900
+Text Notes 7150 4150 0    40   ~ 0
+Route very\nclose together
 $EndSCHEMATC

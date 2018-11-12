@@ -1,103 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:Abracon
-LIBS:ActiveSemi
-LIBS:Altera
-LIBS:AMS
-LIBS:AnalogDevices
-LIBS:AOS
-LIBS:Atmel
-LIBS:Bosch
-LIBS:conn-100mil
-LIBS:conn-2mm
-LIBS:conn-amphenol
-LIBS:conn-assmann
-LIBS:conn-cui
-LIBS:conn-fci
-LIBS:conn-jae
-LIBS:conn-linx
-LIBS:conn-molex
-LIBS:conn-tagconnect
-LIBS:conn-te
-LIBS:conn-test
-LIBS:DiodesInc
-LIBS:display
-LIBS:electomech-misc
-LIBS:_electromech
-LIBS:Fairchild
-LIBS:FTDI
-LIBS:Infineon
-LIBS:Intersil
-LIBS:Lattice
-LIBS:_linear
-LIBS:LinearTech
-LIBS:Littelfuse
-LIBS:logic-4000
-LIBS:logic-7400
-LIBS:logic-7400-new
-LIBS:_logic
-LIBS:MACOM
-LIBS:Macrofab
-LIBS:maxim
-LIBS:mechanical
-LIBS:Microchip
-LIBS:Micron
-LIBS:Murata
-LIBS:NXP
-LIBS:OceanOptics
-LIBS:onsemi
-LIBS:_passive
-LIBS:pasv-BelFuse
-LIBS:pasv-BiTech
-LIBS:pasv-Bourns
-LIBS:pasv-cap
-LIBS:pasv-ind
-LIBS:pasv-Murata
-LIBS:pasv-res
-LIBS:pasv-TDK
-LIBS:pasv-xtal
-LIBS:pcb
-LIBS:power
-LIBS:Recom
-LIBS:Richtek
-LIBS:semi-diode-DiodesInc
-LIBS:semi-diode-generic
-LIBS:semi-diode-MCC
-LIBS:semi-diode-NXP
-LIBS:semi-diode-OnSemi
-LIBS:semi-diode-Semtech
-LIBS:semi-diode-ST
-LIBS:semi-diode-Toshiba
-LIBS:_semi
-LIBS:semi-opto-generic
-LIBS:semi-opto-liteon
-LIBS:semi-thyristor-generic
-LIBS:semi-trans-AOS
-LIBS:semi-trans-DiodesInc
-LIBS:semi-trans-EPC
-LIBS:semi-trans-Fairchild
-LIBS:semi-trans-generic
-LIBS:semi-trans-Infineon
-LIBS:semi-trans-IRF
-LIBS:semi-trans-IXYS
-LIBS:semi-trans-NXP
-LIBS:semi-trans-OnSemi
-LIBS:semi-trans-Panasonic
-LIBS:semi-trans-ST
-LIBS:semi-trans-TI
-LIBS:semi-trans-Toshiba
-LIBS:semi-trans-Vishay
-LIBS:silabs
-LIBS:skyworks
-LIBS:st_ic
-LIBS:ST
-LIBS:supertex
-LIBS:symbol
-LIBS:TexasInstruments
-LIBS:u-blox
-LIBS:Vishay
-LIBS:Winbond
-LIBS:Xilinx
-LIBS:paltatech
+EESchema Schematic File Version 4
 LIBS:IGBT_board-cache
 EELAYER 26 0
 EELAYER END
@@ -114,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PNP Q19
+L _semi:PNP Q19
 U 1 1 5856B1FC
 P 6750 3700
 AR Path="/5822D62D/5856AA02/5856B1FC" Ref="Q19"  Part="1" 
@@ -124,6 +25,7 @@ F 1 "PNP" V 6750 3450 50  0000 L CNN
 F 2 "SMD_Packages:DPAK-2" H 6750 3700 60  0001 C CNN
 F 3 "" H 6750 3700 60  0000 C CNN
 F 4 "MJD2955T4G" H 6750 3700 60  0001 C CNN "mfg#"
+F 5 "MJD2955T4G" H 0   0   60  0001 C CNN "MPN"
 	1    6750 3700
 	0    1    1    0   
 $EndComp
@@ -142,7 +44,7 @@ Vin
 Wire Wire Line
 	4350 3200 4400 3200
 $Comp
-L R-0603 R?
+L pasv-res:R-0603 R?
 U 1 1 5856B214
 P 4150 3000
 AR Path="/5822D62D/5856B214" Ref="R?"  Part="1" 
@@ -159,7 +61,7 @@ F 4 "RES SMD 1k 5% [0603]" H 4900 3550 60  0001 C CNN "BOM"
 	0    1    1    0   
 $EndComp
 $Comp
-L R-0603 R?
+L pasv-res:R-0603 R?
 U 1 1 5856B21C
 P 4700 2800
 AR Path="/5822D62D/5856B21C" Ref="R?"  Part="1" 
@@ -201,7 +103,7 @@ Wire Wire Line
 	7100 2800 7100 3750
 Connection ~ 7100 3750
 $Comp
-L C-ALUM-6.3mm C?
+L pasv-cap:C-ALUM-6.3mm C?
 U 1 1 5856B237
 P 7650 3250
 AR Path="/5822D62D/5856B237" Ref="C?"  Part="1" 
@@ -213,6 +115,7 @@ F 1 "47uF 50v" H 7763 3205 50  0000 L CNN
 F 2 "w_smd_cap:c_elec_6.3x7.7" H 7650 3250 50  0001 C CNN
 F 3 "" H 7640 3225 60  0000 C CNN
 F 4 "EEE-FK1H470XP" H 7650 3250 60  0001 C CNN "mfg#"
+F 5 "EEE-FK1H470XP" H 0   0   60  0001 C CNN "MPN"
 	1    7650 3250
 	1    0    0    -1  
 $EndComp
@@ -227,7 +130,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 3000 4050 3000
 $Comp
-L C-0603 C?
+L pasv-cap:C-0603 C?
 U 1 1 5856B245
 P 4700 2550
 AR Path="/5822D62D/5856B245" Ref="C?"  Part="1" 
@@ -249,7 +152,7 @@ Wire Wire Line
 	4600 2550 4350 2550
 Connection ~ 4350 2800
 $Comp
-L R-0603 R?
+L pasv-res:R-0603 R?
 U 1 1 5856B251
 P 5300 3200
 AR Path="/5822D62D/5856B251" Ref="R?"  Part="1" 
@@ -268,7 +171,7 @@ $EndComp
 Wire Wire Line
 	5150 3200 5200 3200
 $Comp
-L C-0603 C?
+L pasv-cap:C-0603 C?
 U 1 1 5856B25A
 P 5500 3350
 AR Path="/5822D62D/5856B25A" Ref="C?"  Part="1" 
@@ -294,7 +197,7 @@ Wire Wire Line
 	4350 3200 4350 3500
 Connection ~ 4350 3500
 $Comp
-L OPA2376AID U?
+L TexasInstruments:OPA2376AID U?
 U 1 1 5856B26A
 P 4700 3100
 AR Path="/5824556D/5856B26A" Ref="U?"  Part="1" 
@@ -306,11 +209,12 @@ F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 4700 2850 50  0001 C CNN
 F 3 "" V 4700 3250 60  0000 C CNN
 F 4 "OPA2172IDR" H 4700 3100 60  0001 C CNN "#mfg"
 F 5 "IC TI OPA2376AID" H 4700 2750 60  0001 C CNN "BOM"
+F 6 "OPA2172IDR" H 0   0   60  0001 C CNN "MPN"
 	1    4700 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L OPA2376AID U?
+L TexasInstruments:OPA2376AID U?
 U 2 1 5856B273
 P 5900 3100
 AR Path="/5824556D/5856B273" Ref="U?"  Part="2" 
@@ -322,11 +226,12 @@ F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 5900 2850 50  0001 C CNN
 F 3 "" V 5900 3250 60  0000 C CNN
 F 4 "OPA2172IDR" H 5900 3100 60  0001 C CNN "#mfg"
 F 5 "IC TI OPA2376AID" H 5900 2750 60  0001 C CNN "BOM"
+F 6 "OPA2172IDR" H 0   0   60  0001 C CNN "MPN"
 	2    5900 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L OPA2376AID U?
+L TexasInstruments:OPA2376AID U?
 U 3 1 5856B5B6
 P 5500 4500
 AR Path="/5824556D/5856B5B6" Ref="U?"  Part="3" 
@@ -338,11 +243,12 @@ F 2 "IPC7351-Nominal:SOIC127P600X175-8" H 5500 4250 50  0001 C CNN
 F 3 "" V 5500 4650 60  0000 C CNN
 F 4 "OPA2172IDR" H 5500 4500 60  0001 C CNN "#mfg"
 F 5 "IC TI OPA2376AID" H 5500 4150 60  0001 C CNN "BOM"
+F 6 "OPA2172IDR" H 0   0   60  0001 C CNN "MPN"
 	3    5500 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-0603 C?
+L pasv-cap:C-0603 C?
 U 1 1 5856B5EA
 P 5200 4500
 AR Path="/5822D62D/5856B5EA" Ref="C?"  Part="1" 
@@ -385,7 +291,7 @@ Connection ~ 5200 3950
 Text Notes 6250 3200 0    30   ~ 0
 +-75mA output
 $Comp
-L R-0805 R73
+L pasv-res:R-0805 R73
 U 1 1 58575342
 P 6550 3100
 AR Path="/5822D62D/5856AA02/58575342" Ref="R73"  Part="1" 
@@ -399,7 +305,7 @@ F 4 "RES SMD 1k 5% [0805]" H 7300 3650 60  0001 C CNN "BOM"
 	0    1    1    0   
 $EndComp
 $Comp
-L C-1206 C?
+L pasv-cap:C-1206 C?
 U 1 1 5858F095
 P 7400 3250
 AR Path="/58232371/5858F095" Ref="C?"  Part="1" 
@@ -411,7 +317,8 @@ F 0 "C75" H 7513 3296 50  0000 L CNN
 F 1 "10uF 50v" H 7513 3205 50  0000 L CNN
 F 2 "IPC7351-Nominal:CAPC3216X70" H 7400 3250 50  0001 C CNN
 F 3 "" H 7390 3225 60  0000 C CNN
-F 4 "CL31B106KBHNNNE" H 7400 3250 60  0001 C CNN "mfg#"
+F 4 "CL31A106KBHNNNE" H 7400 3250 60  0001 C CNN "mfg#"
+F 5 "CL31A106KBHNNNE" H 0   0   60  0001 C CNN "MPN"
 	1    7400 3250
 	-1   0    0    1   
 $EndComp
